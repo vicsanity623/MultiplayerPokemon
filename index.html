@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Pokemon Hunter RPG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <img src="pokeball_loader.gif" alt="Loading..." style="width:80px; height:80px; margin-bottom:20px; image-rendering: pixelated;">
+        <p id="loading-message">Initializing Pokédex...</p>
+        <div id="loading-progress-bar-container">
+            <div id="loading-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Main Game Wrapper (Scaled and Centered) -->
+    <div id="game-wrapper">
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- UI Container (Elements within the scaled game area) -->
+        <div id="ui-container">
+            <button class="menu-button" id="menuToggleBtn">☰</button>
+            <button class="menu-button" id="pokedexBtn">📖</button>
+            <button class="menu-button" id="muteButton">🔊</button>
+            <div id="pokeCoinDisplay">
+                <span id="pokeCoinIcon">$</span> <span id="pokeCoinAmount">0</span>
+            </div>
+            <div class="game-menu" id="gameMenu">
+                <button id="saveGameBtn">Save Game</button>
+                <button id="loadGameBtn">Load Game</button>
+                <button id="quitGameBtn">Quit Game</button>
+                <button id="fullscreenBtn">Fullscreen</button>
+            </div>
+
+            <div id="team-status-bars-container">
+                <!-- Team member status bars dynamically added here by JS -->
+            </div>
+            <div id="guidingArrow"></div>
+
+            <div id="main-status-area">
+                <!-- Player Status Block -->
+                <div class="status-block-container" id="playerStatusContainer">
+                    <div class="status-bar-label" id="playerStatusLabel">Player LVL 1</div>
+                    <div class="hp-bar-track">
+                        <div class="hp-bar-fill" id="playerHpBarFill"></div>
+                        <div class="hp-bar-value-text" id="playerHpBarValueText">100/100</div>
+                    </div>
+                    <div class="xp-bar-track">
+                        <div class="xp-bar-fill" id="playerXpBarFill"></div>
+                        <div class="xp-bar-value-text" id="playerXpBarValueText">0/100</div>
+                    </div>
+                </div>
+                <!-- Active Pokemon Status Block -->
+                <div class="status-block-container" id="pokemonStatusContainer">
+                    <div class="status-bar-label" id="pokemonStatusLabel">Pikachu LVL 5</div>
+                    <div class="hp-bar-track">
+                        <div class="hp-bar-fill" id="pokemonHpBarFill"></div>
+                        <div class="hp-bar-value-text" id="pokemonHpBarValueText">72/72</div>
+                    </div>
+                    <div class="xp-bar-track">
+                        <div class="xp-bar-fill" id="pokemonXpBarFill"></div>
+                        <div class="xp-bar-value-text" id="pokemonXpBarValueText">0/250</div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End #ui-container -->
+    </div> <!-- End #game-wrapper -->
+
+    <!-- Fixed Position UI Elements (Outside Scaled Wrapper if necessary, or handled by #ui-container's fixed children if they need to be inside for logical grouping) -->
+    <!-- Battle Screen (Viewport Fixed) -->
+    <div id="battle-screen">
+        <div class="battle-arena">
+            <div id="playerBattleUI" class="battle-pokemon-ui">
+                <div id="playerPokemonSprite" class="battle-pokemon-sprite">P</div>
+                <div id="playerPokemonName" class="battle-name">PlayerMon</div>
+                <div id="playerPokemonLevelText" class="battle-level-text">Lvl: ?</div>
+                <div class="battle-hp-bar">
+                    <div id="playerPokemonHPFill" class="battle-hp-fill"></div>
+                </div>
+                <div class="battle-hp-text">HP: ?/?</div>
+                <div class="battle-xp-display">
+                    <span class="battle-xp-label">XP</span>
+                    <div class="battle-xp-bar">
+                        <div id="playerBattlePokemonXpFill" class="battle-xp-bar-fill"></div>
+                    </div>
+                </div>
+                <div id="playerBattlePokemonXpText" class="battle-xp-bar-value-text">0/0</div>
+                <div id="playerBoostIndicator" class="battle-boost-indicator"></div>
+            </div>
+            <div id="enemyBattleUI" class="battle-pokemon-ui">
+                <div id="enemySprite" class="battle-pokemon-sprite">E</div>
+                <div id="enemyName" class="battle-name">WildMon</div>
+                <div id="enemyLevelText" class="battle-level-text">Lvl: ?</div>
+                <div class="battle-hp-bar">
+                    <div id="enemyHPFill" class="battle-hp-fill"></div>
+                </div>
+                <div class="battle-hp-text">HP: ?/?</div>
+            </div>
+        </div>
+        <div id="battle-options-container">
+            <!-- Buttons dynamically added here -->
+        </div>
+        <div id="battle-log-container">
+            <!-- Battle log messages appear here -->
+        </div>
+    </div>
+
+    <!-- Overlays (Viewport Fixed) -->
+    <div id="flash-overlay"></div>
+    <div id="heal-flash-overlay"></div>
+
+    <!-- General Message Area (Viewport Fixed) -->
+    <div id="general-message-area"></div>
+
+    <!-- Joystick (Viewport Fixed) -->
+    <div id="joystick-container">
+        <div id="joystick-base">
+            <div id="joystick-nub"></div>
+        </div>
+    </div>
+
+    <!-- Pokédex Panel (Viewport Fixed) -->
+    <div id="pokedex-panel">
+        <button id="pokedex-close-btn">X</button>
+        <div id="pokedex-main-content">
+            <div id="pokedex-pokemon-list-container">
+                <h2>Caught Pokémon</h2>
+                <ul id="pokedex-pokemon-list">
+                    <!-- Pokémon names will be listed here by JS -->
+                </ul>
+            </div>
+            <div id="pokedex-pokemon-details">
+                <div id="pokedex-sprite-container">
+                    <!-- Sprite/Character will appear here -->
+                </div>
+                <h3 id="pokedex-name-number">Name (#000)</h3>
+                <p id="pokedex-types">Type(s): </p>
+                <div id="pokedex-stats">
+                    <p>HP: <span id="pokedex-stat-hp">-</span> | ATK: <span id="pokedex-stat-atk">-</span> | DEF: <span id="pokedex-stat-def">-</span></p>
+                    <p>SpA: <span id="pokedex-stat-spa">-</span> | SpD: <span id="pokedex-stat-spd">-</span> | SPE: <span id="pokedex-stat-spe">-</span></p>
+                </div>
+                <h4>Description:</h4>
+                <p id="pokedex-description">Select a Pokémon from the list to see its details.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="audio.js"></script>
+    <script src="pokedex-data-loader.js"></script>
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="script4.js"></script>
+    <script src="script5.js"></script>
+    <script src="script6.js"></script>
+    <script src="script7.js"></script>
+    <script src="script8.js"></script>
+</body>
+</html>

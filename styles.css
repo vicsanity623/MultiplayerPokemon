@@ -1,0 +1,689 @@
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* --- Game Wrapper & Canvas --- */
+        #game-wrapper {
+            position: relative;
+            overflow: hidden;
+        }
+
+        canvas {
+            background-color: #70c5ce;
+            cursor: crosshair;
+            display: block; /* Changed from none to block as it's likely unhidden by JS */
+            width: 100%;
+            height: 100%;
+        }
+
+        #ui-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 500;
+            display: none; /* Initially hidden, shown by JS */
+        }
+
+        /* --- Loading Screen --- */
+        #loading-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #222; color: white;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
+            z-index: 10000; font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+        #loading-message { font-size: 24px; margin-bottom: 20px; }
+        #loading-progress-bar-container {
+            width: 80%; max-width: 400px; background-color: #555;
+            border-radius: 5px; height: 25px; border: 1px solid #777;
+        }
+        #loading-progress-bar {
+            width: 0%; height: 100%; background-color: #4CAF50;
+            border-radius: 4px; transition: width 0.2s ease-out;
+        }
+
+        /* --- Menu Buttons & Game Menu --- */
+        .menu-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 3vmin;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+            padding: 0.8vmin 1.5vmin;
+            cursor: pointer;
+            pointer-events: all;
+            z-index: 1000;
+            font-family: inherit;
+        }
+
+        #muteButton {
+            top: 10px;
+            left: auto;
+            right: 10px;
+            font-size: 2.5vmin;
+            padding: 0.8vmin 1vmin;
+        }
+
+        .game-menu {
+            position: absolute;
+            top: calc(10px + 3vmin + 10px);
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            padding: 15px;
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+            pointer-events: all;
+            z-index: 1000;
+            min-width: 150px;
+            font-size: 2vmin;
+        }
+
+        .game-menu button {
+            background-color: #444;
+            color: white;
+            border: 1px solid #888;
+            padding: 1.5vmin;
+            cursor: pointer;
+            text-align: left;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .game-menu button:hover {
+            background-color: #666;
+        }
+
+        /* --- Roaming UI: Main Status Area (Player & Active Pokemon) --- */
+        #main-status-area {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            gap: 10px;
+            pointer-events: none;
+        }
+
+        .status-block-container {
+            width: 25%;
+            min-width: 150px;
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 3px;
+        }
+
+        .status-bar-label {
+            color: white;
+            font-size: 1.5vh;
+            min-height: 1.5vh;
+            text-shadow: 1px 1px #000;
+            white-space: nowrap;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .hp-bar-track,
+        .xp-bar-track { /* Shared track style for HP and XP in roaming UI */
+            height: 3vh;
+            min-height: 20px;
+            max-height: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border: 1px solid white;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hp-bar-fill { /* Roaming UI HP Fill */
+            height: 100%;
+            background-color: #e04040; /* Red for HP */
+            width: 0%;
+            border-radius: 3px;
+            transition: width 0.3s ease-out;
+        }
+
+        .xp-bar-fill { /* Roaming UI XP Fill */
+            height: 100%;
+            background-color: #add8e6; /* Baby Blue for XP */
+            width: 0%;
+            border-radius: 3px;
+            transition: width 0.3s ease-out;
+        }
+
+        .hp-bar-value-text,
+        .xp-bar-value-text { /* Shared value text style for HP and XP in roaming UI */
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            display: flex; justify-content: center; align-items: center;
+            color: white;
+            font-size: 1.4vh;
+            text-shadow: 1px 1px #000;
+            white-space: nowrap;
+            padding: 0 3px;
+            box-sizing: border-box;
+            z-index: 1;
+        }
+
+        /* --- Roaming UI: Team Member Status Bars --- */
+        #team-status-bars-container {
+            position: absolute;
+            bottom: calc(10px + 86px + 5px); /* Position above main status area */
+            right: 10px;
+            width: 35%;
+            max-width: 300px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 0.5vh;
+            pointer-events: none;
+            z-index: 500;
+        }
+
+        .team-member-xp-bar-container {
+            position: relative;
+            width: 100%;
+            height: 2.2vh;
+            min-height: 15px;
+            max-height: 20px;
+            background-color: rgba(0,0,0,0.7);
+            border: 1px solid #AAA;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            padding: 0 5px;
+            box-sizing: border-box;
+        }
+        .team-member-indicator {
+            width: 1.2vh;
+            height: 1.2vh;
+            min-width: 8px;
+            min-height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+            flex-shrink: 0;
+        }
+        .team-member-xp-bar-fill { /* This is the FILL for team member bars */
+            position: absolute;
+            left: 0; top: 0;
+            border-radius: 2px;
+            background-color: #60d060; /* Example green, adjust if needed */
+            height: 100%;
+            width: 0%; /* JS Controlled */
+            transition: width 0.3s ease-out;
+        }
+        .team-member-xp-bar-text { /* This is the TEXT for team member bars */
+            font-size: 1.2vh;
+            justify-content: flex-start;
+            padding-left: 0;
+            width: calc(100% - 1.2vh - 10px);
+            position: relative;
+            margin-left: calc(1.2vh + 6px);
+            color: white;
+            text-shadow: 1px 1px #000;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        /* --- Battle Screen Styles --- */
+        #battle-screen {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            display: none;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+            z-index: 2000;
+            pointer-events: all;
+            padding: 3vh 20px 2vh 20px;
+            box-sizing: border-box;
+            transition: opacity 0.5s ease-out;
+        }
+        .battle-arena {
+            order: 1; display: flex; justify-content: space-between;
+            align-items: flex-end; width: 100%; max-width: 90vw;
+            flex-grow: 1; margin-bottom: 2vh;
+        }
+        #playerBattleUI { margin-right: auto; margin-left: 2%; }
+        #enemyBattleUI { margin-left: auto;  margin-right: 2%; transform: translateY(-5vh); }
+
+        .battle-pokemon-ui {
+            text-align: center; padding: 1vmin 1.5vmin;
+            background: rgba(50,50,50,0.65); border-radius: 8px; border: 1px solid #777;
+            width: 45%; max-width: 300px; box-sizing: border-box;
+            display: flex; flex-direction: column; align-items: center;
+        }
+        .battle-pokemon-sprite {
+            width: 15vmin; height: 15vmin; max-width: 120px; max-height: 120px;
+            font-size: 7vmin; margin: 0 auto 1vmin auto;
+            display: flex; justify-content: center; align-items: center;
+            border: 0.4vmin solid white; font-weight: bold;
+            background-size: contain; background-repeat: no-repeat; background-position: center;
+        }
+        .battle-name { font-size: 2.8vmin; margin-bottom: 0.3vmin; }
+        .battle-hp-text, .battle-level-text { font-size: 1.8vmin; }
+
+        .battle-hp-bar { /* Battle Screen HP Bar Track */
+            width: 90%;
+            height: 2vmin;
+            margin: 0.5vmin auto;
+            background-color: rgba(0,0,0,0.4);
+            border: 1px solid #777;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .battle-hp-fill { /* Battle Screen HP Bar Fill */
+            height: 100%;
+            background-color: #e04040; /* Red */
+            border-radius: 3px;
+            transition: width 0.3s ease-out;
+        }
+
+        /* Battle Screen Player XP Bar */
+        .battle-xp-display {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            margin: 0.5vmin auto 0.3vmin auto;
+        }
+        .battle-xp-label {
+            color: white;
+            font-weight: bold;
+            font-size: 1.8vmin;
+            margin-right: 8px;
+        }
+        .battle-xp-bar {
+            flex-grow: 1;
+            height: 1.5vmin;
+            min-height: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border: 1px solid #777;
+            border-radius: 3px;
+            position: relative;
+            overflow: hidden;
+        }
+        .battle-xp-bar-fill {
+            height: 100%;
+            background-color: #87CEEB; /* Baby blue */
+            width: 0%; /* JS controlled */
+            border-radius: 2px;
+            transition: width 0.3s ease-out;
+        }
+        #playerBattlePokemonXpText.battle-xp-bar-value-text { /* XP Value text for battle */
+            font-size: 1.6vmin;
+            color: white;
+            text-align: center;
+            width: 90%;
+            margin: 0.1vmin auto 0.5vmin auto;
+            text-shadow: 1px 1px #000;
+        }
+
+        .battle-boost-indicator {
+            font-size: 1.6vmin;
+            color: #FFD700;
+            margin-top: 0.5vmin;
+            text-shadow: 1px 1px #000;
+            height: 2vmin;
+            line-height: 2vmin;
+        }
+
+        #battle-options-container {
+            order: 2; width: 95%; max-width: 80vw; text-align: center;
+            padding: 1vmin 0; display: flex; flex-wrap: wrap;
+            justify-content: center; align-items: center; margin-bottom: 2vh;
+        }
+        #battle-options-container button { padding: 1.5vmin 2vmin; font-size: 2vmin; margin: 0.8vmin; }
+        #battle-options-container button:hover { background-color: #6c6ca7; }
+        #battle-options-container button:disabled { background-color: #333; color: #777; cursor: not-allowed; }
+        #battle-options-container p { width: 100%; font-size: 2vmin; margin-bottom: 1vmin;}
+
+        #battle-log-container {
+            order: 3; width: 95%; max-width: 80vw; height: 15vh; max-height: 120px;
+            background: rgba(30,30,30,0.7); overflow-y: auto; padding: 1vmin;
+            border: 1px solid #555; border-radius: 5px; font-size: 1.7vmin;
+        }
+
+        /* --- Fullscreen Overlays --- */
+        #flash-overlay, #heal-flash-overlay {
+            position: fixed; top:0; left:0; width:100%; height:100%;
+            background-color: white; opacity: 0;
+            pointer-events:none; transition: opacity 0.1s ease-out;
+        }
+        #flash-overlay { z-index: 3000; }
+        #heal-flash-overlay { z-index: 3001; transition: opacity 0.2s ease-out; }
+
+        /* --- General Viewport-Fixed UI Elements --- */
+        #general-message-area {
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            padding: 0.5vmin 1vmin;
+            display: none;
+            z-index: 2500;
+            font-size: 1.6vmin;
+            text-align: center;
+            max-width: 60vw;
+            text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, 0px 2px 3px rgba(0,0,0,0.7);
+            pointer-events: none;
+        }
+
+        #joystick-container {
+            position: fixed;
+            bottom: 15vmin;
+            left: 15vmin;
+            width: 25vmin;
+            height: 25vmin;
+            z-index: 1500;
+            display: none;
+            pointer-events: all;
+        }
+        #joystick-base { width: 100%; height: 100%; background-color: rgba(128, 128, 128, 0.4); border-radius: 50%; position: relative; }
+        #joystick-nub { width: 10vmin; height: 10vmin; background-color: rgba(80, 80, 80, 0.7); border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); cursor: grab; }
+
+        #pokeCoinDisplay {
+            position: absolute; /* Relative to ui-container, which is inside game-wrapper */
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: gold;
+            font-size: 1.7vmin;
+            font-family: inherit;
+            text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000, 0px 2px 3px rgba(0,0,0,0.7);
+            z-index: 990; /* Ensure it's above canvas but below menu buttons if they overlap conceptually */
+            display: none; /* JS controlled */
+            pointer-events: none;
+        }
+        #pokeCoinIcon {
+            color: limegreen;
+            font-weight: bold;
+            margin-right: 0.3em;
+        }
+        #pokedexBtn {
+            /* Position it below the main menu button */
+            top: calc(20px + 3vmin + 1.6vmin + 2px + 5px); /* 10px (menuBtn top) + 3vmin (menuBtn font) + 1.6vmin (menuBtn padding) + 2px (menuBtn border) + 5px (gap) */
+            left: 10px; /* Keep it aligned with the menu button */
+            font-size: 2.8vmin; /* Slightly smaller or same as menu button */
+            padding: 0.7vmin 1.2vmin; /* Adjust padding as needed */
+        }
+        /* --- Pokédex Panel Styles --- */
+        #pokedex-panel {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90vw;
+            max-width: 700px; /* Max width of the Pokedex */
+            height: 85vh;
+            max-height: 550px; /* Max height of the Pokedex */
+            background-color: #e74c3c; /* Classic Pokedex Red */
+            border: 10px solid #c0392b; /* Darker red border */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            z-index: 2500; /* Ensure it's above most UI */
+            display: none; /* Initially hidden */
+            flex-direction: column;
+            padding: 15px;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            color: #2c3e50; /* Dark text color */
+            overflow: hidden; /* Prevent content spill */
+        }
+
+        #pokedex-close-btn {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            background-color: #c0392b;
+            color: white;
+            border: 2px solid white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            pointer-events: all;
+            z-index: 10; /* Above other Pokedex content */
+            line-height: 26px; /* Center the X */
+            text-align: center;
+            padding: 0;
+        }
+        #pokedex-close-btn:hover {
+            background-color: #e74c3c;
+        }
+
+        #pokedex-main-content {
+            display: flex;
+            width: 100%;
+            height: calc(100% - 20px); /* Account for padding or title bar */
+            margin-top: 10px; /* Space from top/close button */
+            gap: 15px;
+        }
+
+        #pokedex-pokemon-list-container {
+            width: 30%; /* NEW: Adjusted width for the list of Pokémon */
+            min-width: 150px; /* Optional: ensure it doesn't get too tiny */
+            height: 100%;
+            background-color: #f0f0f0; /* Light grey inner screen */
+            border: 3px solid #7f8c8d; /* Grey border */
+            border-radius: 8px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto; /* Scroll if list is long */
+        }
+
+        #pokedex-pokemon-list-container h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        #pokedex-pokemon-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            flex-grow: 1; /* Allow list to take remaining space */
+        }
+
+        #pokedex-pokemon-list li {
+            padding: 8px 10px;
+            margin-bottom: 5px;
+            background-color: #bdc3c7; /* Light grey for list items */
+            color: #2c3e50;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.2s;
+        }
+
+        #pokedex-pokemon-list li:hover, #pokedex-pokemon-list li.selected-pokemon {
+            background-color: #3498db; /* Blue highlight */
+            color: white;
+        }
+
+        #pokedex-pokemon-details {
+            width: 70%; /* NEW: Adjusted width for the Pokémon details */
+            height: 100%;
+            background-color: #f0f0f0; /* Light grey inner screen */
+            border: 3px solid #7f8c8d; /* Grey border */
+            border-radius: 8px;
+            padding: 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Keeps sprite, name, types, stats centered */
+            overflow-y: auto; /* Scroll if content is long */
+        }
+
+        #pokedex-pokemon-details h4 {
+            width: 100%; /* Make the heading block take full width */
+            text-align: left; /* Align its text to the left */
+            margin-top: 15px; /* Add some space above "Description:" */
+            margin-bottom: 5px;
+            font-size: 1.1em; /* Adjust size as needed */
+            color: #2c3e50;
+        }
+
+        #pokedex-sprite-container {
+            width: 120px;
+            height: 120px;
+            background-color: #bdc3c7; /* Placeholder background */
+            border: 2px solid #2c3e50;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px; /* For text fallback */
+            font-weight: bold;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            image-rendering: pixelated; /* For pixel art sprites */
+        }
+
+        #pokedex-name-number {
+            font-size: 1.4em;
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        #pokedex-types {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #34495e;
+        }
+        .pokedex-type-span {
+            padding: 3px 8px;
+            border-radius: 5px;
+            color: white;
+            margin-right: 5px;
+            font-size: 0.9em;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        }
+
+        #pokedex-stats {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        #pokedex-stats p {
+            margin: 3px 0;
+        }
+
+        #pokedex-description {
+            font-size: 0.9em;
+            line-height: 1.4;
+            text-align: left;
+            width: 100%;
+            flex-grow: 1; /* Allow description to take space */
+            overflow-y: auto; /* Scroll if description is very long */
+            padding: 5px;
+            background-color: #e0e0e0;
+            border-radius: 3px;
+            min-height: 100px;
+        }
+
+
+        #guidingArrow {
+            position: absolute; /* Relative to ui-container */
+            top: 35px;
+            left: 50%;
+            transform: translateX(-50%) rotate(var(--arrow-rotation, 0deg));
+            transform-origin: 50% 0%;
+            width: 0;
+            height: 0;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            border-bottom: 32px solid rgba(0, 191, 255, 0.85);
+            filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.4));
+            pointer-events: none;
+            z-index: 600; /* Above most world UI, below menu */
+            display: none; /* JS controlled */
+            transition: opacity 0.3s ease-out;
+            --arrow-rotation: 0deg; /* CSS variable for JS to set rotation */
+        }
+        #guidingArrow.pulsing {
+            animation: pulseAndScaleArrow 1.3s infinite ease-in-out;
+        }
+
+        /* --- Animations --- */
+        @keyframes pokemonFaintDrop {
+            0% { transform: translateY(0); opacity: 1; }
+            70% { transform: translateY(10vh); opacity: 0.9; }
+            100% { transform: translateY(15vh); opacity: 0; }
+        }
+        .pokemon-sprite-fainted {
+            animation: pokemonFaintDrop 0.7s ease-in forwards;
+        }
+
+        @keyframes battleSpriteFlash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.15; }
+        }
+        @keyframes battleSpriteShake {
+            0%, 100% { transform: translateX(0) var(--current-translateY, translateY(0)); }
+            10%, 50%, 90% { transform: translateX(-5px) var(--current-translateY, translateY(0)); }
+            30%, 70% { transform: translateX(5px) var(--current-translateY, translateY(0)); }
+        }
+        @keyframes battleSpriteBuffDebuffFlash {
+            0%, 100% { filter: brightness(100%); }
+            50% { filter: brightness(180%) saturate(150%); }
+        }
+        .pokemon-sprite-hit {
+            animation: battleSpriteFlash 0.12s 3 ease-in-out, battleSpriteShake 0.35s 1 ease-in-out;
+        }
+        .pokemon-sprite-stat-change {
+            animation: battleSpriteBuffDebuffFlash 0.2s 2 ease-in-out;
+        }
+
+        @keyframes pulseAndScaleArrow {
+            0% {
+                opacity: 0.6;
+                transform: translateX(-50%) rotate(var(--arrow-rotation)) scale(0.95);
+            }
+            50% {
+                opacity: 1;
+                transform: translateX(-50%) rotate(var(--arrow-rotation)) scale(1.05);
+            }
+            100% {
+                opacity: 0.6;
+                transform: translateX(-50%) rotate(var(--arrow-rotation)) scale(0.95);
+            }
+        }

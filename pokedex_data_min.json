@@ -1,0 +1,4735 @@
+{
+  "pokemonDetails": [
+    {
+      "id": 1,
+      "apiName": "bulbasaur",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 49,
+        "defense": 49,
+        "specialattack": 65,
+        "specialdefense": 65,
+        "speed": 45
+      },
+      "height": 7,
+      "weight": 69,
+      "description": "A strange seed was planted on its back at birth. The plant sprouts and grows with this POKéMON.",
+      "baseExperienceYield": 64,
+      "sprites": {
+        "front_default": "./sprites/pokemon/1_bulbasaur.png",
+        "front_shiny": "./sprites/pokemon/1_bulbasaur_shiny.png"
+      }
+    },
+    {
+      "id": 2,
+      "apiName": "ivysaur",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 62,
+        "defense": 63,
+        "specialattack": 80,
+        "specialdefense": 80,
+        "speed": 60
+      },
+      "height": 10,
+      "weight": 130,
+      "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+      "baseExperienceYield": 142,
+      "sprites": {
+        "front_default": "./sprites/pokemon/2_ivysaur.png",
+        "front_shiny": "./sprites/pokemon/2_ivysaur_shiny.png"
+      }
+    },
+    {
+      "id": 3,
+      "apiName": "venusaur",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 83,
+        "specialattack": 100,
+        "specialdefense": 100,
+        "speed": 80
+      },
+      "height": 20,
+      "weight": 1000,
+      "description": "The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+      "baseExperienceYield": 263,
+      "sprites": {
+        "front_default": "./sprites/pokemon/3_venusaur.png",
+        "front_shiny": "./sprites/pokemon/3_venusaur_shiny.png"
+      }
+    },
+    {
+      "id": 4,
+      "apiName": "charmander",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 39,
+        "attack": 52,
+        "defense": 43,
+        "specialattack": 60,
+        "specialdefense": 50,
+        "speed": 65
+      },
+      "height": 6,
+      "weight": 85,
+      "description": "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+      "baseExperienceYield": 62,
+      "sprites": {
+        "front_default": "./sprites/pokemon/4_charmander.png",
+        "front_shiny": "./sprites/pokemon/4_charmander_shiny.png"
+      }
+    },
+    {
+      "id": 5,
+      "apiName": "charmeleon",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 58,
+        "attack": 64,
+        "defense": 58,
+        "specialattack": 80,
+        "specialdefense": 65,
+        "speed": 80
+      },
+      "height": 11,
+      "weight": 190,
+      "description": "When it swings its burning tail, it elevates the temperature to unbearably high levels.",
+      "baseExperienceYield": 142,
+      "sprites": {
+        "front_default": "./sprites/pokemon/5_charmeleon.png",
+        "front_shiny": "./sprites/pokemon/5_charmeleon_shiny.png"
+      }
+    },
+    {
+      "id": 6,
+      "apiName": "charizard",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 78,
+        "attack": 84,
+        "defense": 78,
+        "specialattack": 109,
+        "specialdefense": 85,
+        "speed": 100
+      },
+      "height": 17,
+      "weight": 905,
+      "description": "Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
+      "baseExperienceYield": 267,
+      "sprites": {
+        "front_default": "./sprites/pokemon/6_charizard.png",
+        "front_shiny": "./sprites/pokemon/6_charizard_shiny.png"
+      }
+    },
+    {
+      "id": 7,
+      "apiName": "squirtle",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 44,
+        "attack": 48,
+        "defense": 65,
+        "specialattack": 50,
+        "specialdefense": 64,
+        "speed": 43
+      },
+      "height": 5,
+      "weight": 90,
+      "description": "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+      "baseExperienceYield": 63,
+      "sprites": {
+        "front_default": "./sprites/pokemon/7_squirtle.png",
+        "front_shiny": "./sprites/pokemon/7_squirtle_shiny.png"
+      }
+    },
+    {
+      "id": 8,
+      "apiName": "wartortle",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 59,
+        "attack": 63,
+        "defense": 80,
+        "specialattack": 65,
+        "specialdefense": 80,
+        "speed": 58
+      },
+      "height": 10,
+      "weight": 225,
+      "description": "Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
+      "baseExperienceYield": 142,
+      "sprites": {
+        "front_default": "./sprites/pokemon/8_wartortle.png",
+        "front_shiny": "./sprites/pokemon/8_wartortle_shiny.png"
+      }
+    },
+    {
+      "id": 9,
+      "apiName": "blastoise",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 79,
+        "attack": 83,
+        "defense": 100,
+        "specialattack": 85,
+        "specialdefense": 105,
+        "speed": 78
+      },
+      "height": 16,
+      "weight": 855,
+      "description": "A brutal POKéMON with pressurized water jets on its shell. They are used for high speed tackles.",
+      "baseExperienceYield": 265,
+      "sprites": {
+        "front_default": "./sprites/pokemon/9_blastoise.png",
+        "front_shiny": "./sprites/pokemon/9_blastoise_shiny.png"
+      }
+    },
+    {
+      "id": 10,
+      "apiName": "caterpie",
+      "types": [
+        "bug"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 30,
+        "defense": 35,
+        "specialattack": 20,
+        "specialdefense": 20,
+        "speed": 45
+      },
+      "height": 3,
+      "weight": 29,
+      "description": "Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
+      "baseExperienceYield": 39,
+      "sprites": {
+        "front_default": "./sprites/pokemon/10_caterpie.png",
+        "front_shiny": "./sprites/pokemon/10_caterpie_shiny.png"
+      }
+    },
+    {
+      "id": 11,
+      "apiName": "metapod",
+      "types": [
+        "bug"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 20,
+        "defense": 55,
+        "specialattack": 25,
+        "specialdefense": 25,
+        "speed": 30
+      },
+      "height": 7,
+      "weight": 99,
+      "description": "This POKéMON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
+      "baseExperienceYield": 72,
+      "sprites": {
+        "front_default": "./sprites/pokemon/11_metapod.png",
+        "front_shiny": "./sprites/pokemon/11_metapod_shiny.png"
+      }
+    },
+    {
+      "id": 12,
+      "apiName": "butterfree",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 45,
+        "defense": 50,
+        "specialattack": 90,
+        "specialdefense": 80,
+        "speed": 70
+      },
+      "height": 11,
+      "weight": 320,
+      "description": "In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
+      "baseExperienceYield": 198,
+      "sprites": {
+        "front_default": "./sprites/pokemon/12_butterfree.png",
+        "front_shiny": "./sprites/pokemon/12_butterfree_shiny.png"
+      }
+    },
+    {
+      "id": 13,
+      "apiName": "weedle",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "specialattack": 20,
+        "specialdefense": 20,
+        "speed": 50
+      },
+      "height": 3,
+      "weight": 32,
+      "description": "Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
+      "baseExperienceYield": 39,
+      "sprites": {
+        "front_default": "./sprites/pokemon/13_weedle.png",
+        "front_shiny": "./sprites/pokemon/13_weedle_shiny.png"
+      }
+    },
+    {
+      "id": 14,
+      "apiName": "kakuna",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 25,
+        "defense": 50,
+        "specialattack": 25,
+        "specialdefense": 25,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 100,
+      "description": "Almost incapable of moving, this POKéMON can only harden its shell to protect itself from predators.",
+      "baseExperienceYield": 72,
+      "sprites": {
+        "front_default": "./sprites/pokemon/14_kakuna.png",
+        "front_shiny": "./sprites/pokemon/14_kakuna_shiny.png"
+      }
+    },
+    {
+      "id": 15,
+      "apiName": "beedrill",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 40,
+        "specialattack": 45,
+        "specialdefense": 80,
+        "speed": 75
+      },
+      "height": 10,
+      "weight": 295,
+      "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+      "baseExperienceYield": 178,
+      "sprites": {
+        "front_default": "./sprites/pokemon/15_beedrill.png",
+        "front_shiny": "./sprites/pokemon/15_beedrill_shiny.png"
+      }
+    },
+    {
+      "id": 16,
+      "apiName": "pidgey",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 40,
+        "specialattack": 35,
+        "specialdefense": 35,
+        "speed": 56
+      },
+      "height": 3,
+      "weight": 18,
+      "description": "A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
+      "baseExperienceYield": 50,
+      "sprites": {
+        "front_default": "./sprites/pokemon/16_pidgey.png",
+        "front_shiny": "./sprites/pokemon/16_pidgey_shiny.png"
+      }
+    },
+    {
+      "id": 17,
+      "apiName": "pidgeotto",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 63,
+        "attack": 60,
+        "defense": 55,
+        "specialattack": 50,
+        "specialdefense": 50,
+        "speed": 71
+      },
+      "height": 11,
+      "weight": 300,
+      "description": "Very protective of its sprawling territorial area, this POKéMON will fiercely peck at any intruder.",
+      "baseExperienceYield": 122,
+      "sprites": {
+        "front_default": "./sprites/pokemon/17_pidgeotto.png",
+        "front_shiny": "./sprites/pokemon/17_pidgeotto_shiny.png"
+      }
+    },
+    {
+      "id": 18,
+      "apiName": "pidgeot",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 83,
+        "attack": 80,
+        "defense": 75,
+        "specialattack": 70,
+        "specialdefense": 70,
+        "speed": 101
+      },
+      "height": 15,
+      "weight": 395,
+      "description": "When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
+      "baseExperienceYield": 216,
+      "sprites": {
+        "front_default": "./sprites/pokemon/18_pidgeot.png",
+        "front_shiny": "./sprites/pokemon/18_pidgeot_shiny.png"
+      }
+    },
+    {
+      "id": 19,
+      "apiName": "rattata",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 56,
+        "defense": 35,
+        "specialattack": 25,
+        "specialdefense": 35,
+        "speed": 72
+      },
+      "height": 3,
+      "weight": 35,
+      "description": "Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
+      "baseExperienceYield": 51,
+      "sprites": {
+        "front_default": "./sprites/pokemon/19_rattata.png",
+        "front_shiny": "./sprites/pokemon/19_rattata_shiny.png"
+      }
+    },
+    {
+      "id": 20,
+      "apiName": "raticate",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 81,
+        "defense": 60,
+        "specialattack": 50,
+        "specialdefense": 70,
+        "speed": 97
+      },
+      "height": 7,
+      "weight": 185,
+      "description": "It uses its whis­ kers to maintain its balance. It apparently slows down if they are cut off.",
+      "baseExperienceYield": 145,
+      "sprites": {
+        "front_default": "./sprites/pokemon/20_raticate.png",
+        "front_shiny": "./sprites/pokemon/20_raticate_shiny.png"
+      }
+    },
+    {
+      "id": 21,
+      "apiName": "spearow",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 60,
+        "defense": 30,
+        "specialattack": 31,
+        "specialdefense": 31,
+        "speed": 70
+      },
+      "height": 3,
+      "weight": 20,
+      "description": "It flaps its small wings busily to fly. Using its beak, it searches in grass for prey.",
+      "baseExperienceYield": 52,
+      "sprites": {
+        "front_default": "./sprites/pokemon/21_spearow.png",
+        "front_shiny": "./sprites/pokemon/21_spearow_shiny.png"
+      }
+    },
+    {
+      "id": 22,
+      "apiName": "fearow",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 65,
+        "specialattack": 61,
+        "specialdefense": 61,
+        "speed": 100
+      },
+      "height": 12,
+      "weight": 380,
+      "description": "With its huge and magnificent wings, it can keep aloft without ever having to land for rest.",
+      "baseExperienceYield": 155,
+      "sprites": {
+        "front_default": "./sprites/pokemon/22_fearow.png",
+        "front_shiny": "./sprites/pokemon/22_fearow_shiny.png"
+      }
+    },
+    {
+      "id": 23,
+      "apiName": "ekans",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 60,
+        "defense": 44,
+        "specialattack": 40,
+        "specialdefense": 54,
+        "speed": 55
+      },
+      "height": 20,
+      "weight": 69,
+      "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
+      "baseExperienceYield": 58,
+      "sprites": {
+        "front_default": "./sprites/pokemon/23_ekans.png",
+        "front_shiny": "./sprites/pokemon/23_ekans_shiny.png"
+      }
+    },
+    {
+      "id": 24,
+      "apiName": "arbok",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 95,
+        "defense": 69,
+        "specialattack": 65,
+        "specialdefense": 79,
+        "speed": 80
+      },
+      "height": 35,
+      "weight": 650,
+      "description": "It is rumored that the ferocious warning markings on its belly differ from area to area.",
+      "baseExperienceYield": 157,
+      "sprites": {
+        "front_default": "./sprites/pokemon/24_arbok.png",
+        "front_shiny": "./sprites/pokemon/24_arbok_shiny.png"
+      }
+    },
+    {
+      "id": 25,
+      "apiName": "pikachu",
+      "types": [
+        "electric"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 55,
+        "defense": 40,
+        "specialattack": 50,
+        "specialdefense": 50,
+        "speed": 90
+      },
+      "height": 4,
+      "weight": 60,
+      "description": "When several of these POKéMON gather, their electricity could build and cause lightning storms.",
+      "baseExperienceYield": 112,
+      "sprites": {
+        "front_default": "./sprites/pokemon/25_pikachu.png",
+        "front_shiny": "./sprites/pokemon/25_pikachu_shiny.png"
+      }
+    },
+    {
+      "id": 26,
+      "apiName": "raichu",
+      "types": [
+        "electric"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 90,
+        "defense": 55,
+        "specialattack": 90,
+        "specialdefense": 80,
+        "speed": 110
+      },
+      "height": 8,
+      "weight": 300,
+      "description": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+      "baseExperienceYield": 243,
+      "sprites": {
+        "front_default": "./sprites/pokemon/26_raichu.png",
+        "front_shiny": "./sprites/pokemon/26_raichu_shiny.png"
+      }
+    },
+    {
+      "id": 27,
+      "apiName": "sandshrew",
+      "types": [
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 85,
+        "specialattack": 20,
+        "specialdefense": 30,
+        "speed": 40
+      },
+      "height": 6,
+      "weight": 120,
+      "description": "Burrows deep underground in arid locations far from water. It only emerges to hunt for food.",
+      "baseExperienceYield": 60,
+      "sprites": {
+        "front_default": "./sprites/pokemon/27_sandshrew.png",
+        "front_shiny": "./sprites/pokemon/27_sandshrew_shiny.png"
+      }
+    },
+    {
+      "id": 28,
+      "apiName": "sandslash",
+      "types": [
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 110,
+        "specialattack": 45,
+        "specialdefense": 55,
+        "speed": 65
+      },
+      "height": 10,
+      "weight": 295,
+      "description": "Curls up into a spiny ball when threatened. It can roll while curled up to attack or escape.",
+      "baseExperienceYield": 158,
+      "sprites": {
+        "front_default": "./sprites/pokemon/28_sandslash.png",
+        "front_shiny": "./sprites/pokemon/28_sandslash_shiny.png"
+      }
+    },
+    {
+      "id": 29,
+      "apiName": "nidoran-f",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 47,
+        "defense": 52,
+        "specialattack": 40,
+        "specialdefense": 40,
+        "speed": 41
+      },
+      "height": 4,
+      "weight": 70,
+      "description": "Although small, its venomous barbs render this POKéMON dangerous. The female has smaller horns.",
+      "baseExperienceYield": 55,
+      "sprites": {
+        "front_default": "./sprites/pokemon/29_nidoran-f.png",
+        "front_shiny": "./sprites/pokemon/29_nidoran-f_shiny.png"
+      }
+    },
+    {
+      "id": 30,
+      "apiName": "nidorina",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 62,
+        "defense": 67,
+        "specialattack": 55,
+        "specialdefense": 55,
+        "speed": 56
+      },
+      "height": 8,
+      "weight": 200,
+      "description": "The female's horn develops slowly. Prefers physical attacks such as clawing and biting.",
+      "baseExperienceYield": 128,
+      "sprites": {
+        "front_default": "./sprites/pokemon/30_nidorina.png",
+        "front_shiny": "./sprites/pokemon/30_nidorina_shiny.png"
+      }
+    },
+    {
+      "id": 31,
+      "apiName": "nidoqueen",
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 92,
+        "defense": 87,
+        "specialattack": 75,
+        "specialdefense": 85,
+        "speed": 76
+      },
+      "height": 13,
+      "weight": 600,
+      "description": "Its hard scales provide strong protection. It uses its hefty bulk to execute powerful moves.",
+      "baseExperienceYield": 253,
+      "sprites": {
+        "front_default": "./sprites/pokemon/31_nidoqueen.png",
+        "front_shiny": "./sprites/pokemon/31_nidoqueen_shiny.png"
+      }
+    },
+    {
+      "id": 32,
+      "apiName": "nidoran-m",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 46,
+        "attack": 57,
+        "defense": 40,
+        "specialattack": 40,
+        "specialdefense": 40,
+        "speed": 50
+      },
+      "height": 5,
+      "weight": 90,
+      "description": "Stiffens its ears to sense danger. The larger its horns, the more powerful its secreted venom.",
+      "baseExperienceYield": 55,
+      "sprites": {
+        "front_default": "./sprites/pokemon/32_nidoran-m.png",
+        "front_shiny": "./sprites/pokemon/32_nidoran-m_shiny.png"
+      }
+    },
+    {
+      "id": 33,
+      "apiName": "nidorino",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 61,
+        "attack": 72,
+        "defense": 57,
+        "specialattack": 55,
+        "specialdefense": 55,
+        "speed": 65
+      },
+      "height": 9,
+      "weight": 195,
+      "description": "An aggressive POKéMON that is quick to attack. The horn on its head secretes a powerful venom.",
+      "baseExperienceYield": 128,
+      "sprites": {
+        "front_default": "./sprites/pokemon/33_nidorino.png",
+        "front_shiny": "./sprites/pokemon/33_nidorino_shiny.png"
+      }
+    },
+    {
+      "id": 34,
+      "apiName": "nidoking",
+      "types": [
+        "poison",
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 81,
+        "attack": 102,
+        "defense": 77,
+        "specialattack": 85,
+        "specialdefense": 75,
+        "speed": 85
+      },
+      "height": 14,
+      "weight": 620,
+      "description": "It uses its powerful tail in battle to smash, constrict, then break the prey's bones.",
+      "baseExperienceYield": 253,
+      "sprites": {
+        "front_default": "./sprites/pokemon/34_nidoking.png",
+        "front_shiny": "./sprites/pokemon/34_nidoking_shiny.png"
+      }
+    },
+    {
+      "id": 35,
+      "apiName": "clefairy",
+      "types": [
+        "fairy"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 45,
+        "defense": 48,
+        "specialattack": 60,
+        "specialdefense": 65,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 75,
+      "description": "Its magical and cute appeal has many admirers. It is rare and found only in certain areas.",
+      "baseExperienceYield": 113,
+      "sprites": {
+        "front_default": "./sprites/pokemon/35_clefairy.png",
+        "front_shiny": "./sprites/pokemon/35_clefairy_shiny.png"
+      }
+    },
+    {
+      "id": 36,
+      "apiName": "clefable",
+      "types": [
+        "fairy"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "attack": 70,
+        "defense": 73,
+        "specialattack": 95,
+        "specialdefense": 90,
+        "speed": 60
+      },
+      "height": 13,
+      "weight": 400,
+      "description": "A timid fairy POKéMON that is rarely seen. It will run and hide the moment it senses people.",
+      "baseExperienceYield": 242,
+      "sprites": {
+        "front_default": "./sprites/pokemon/36_clefable.png",
+        "front_shiny": "./sprites/pokemon/36_clefable_shiny.png"
+      }
+    },
+    {
+      "id": 37,
+      "apiName": "vulpix",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 38,
+        "attack": 41,
+        "defense": 40,
+        "specialattack": 50,
+        "specialdefense": 65,
+        "speed": 65
+      },
+      "height": 6,
+      "weight": 99,
+      "description": "At the time of birth, it has just one tail. The tail splits from its tip as it grows older.",
+      "baseExperienceYield": 60,
+      "sprites": {
+        "front_default": "./sprites/pokemon/37_vulpix.png",
+        "front_shiny": "./sprites/pokemon/37_vulpix_shiny.png"
+      }
+    },
+    {
+      "id": 38,
+      "apiName": "ninetales",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 73,
+        "attack": 76,
+        "defense": 75,
+        "specialattack": 81,
+        "specialdefense": 100,
+        "speed": 100
+      },
+      "height": 11,
+      "weight": 199,
+      "description": "Very smart and very vengeful. Grabbing one of its many tails could result in a 1000-year curse.",
+      "baseExperienceYield": 177,
+      "sprites": {
+        "front_default": "./sprites/pokemon/38_ninetales.png",
+        "front_shiny": "./sprites/pokemon/38_ninetales_shiny.png"
+      }
+    },
+    {
+      "id": 39,
+      "apiName": "jigglypuff",
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "baseStats": {
+        "hp": 115,
+        "attack": 45,
+        "defense": 20,
+        "specialattack": 45,
+        "specialdefense": 25,
+        "speed": 20
+      },
+      "height": 5,
+      "weight": 55,
+      "description": "When its huge eyes light up, it sings a mysteriously soothing melody that lulls its enemies to sleep.",
+      "baseExperienceYield": 95,
+      "sprites": {
+        "front_default": "./sprites/pokemon/39_jigglypuff.png",
+        "front_shiny": "./sprites/pokemon/39_jigglypuff_shiny.png"
+      }
+    },
+    {
+      "id": 40,
+      "apiName": "wigglytuff",
+      "types": [
+        "normal",
+        "fairy"
+      ],
+      "baseStats": {
+        "hp": 140,
+        "attack": 70,
+        "defense": 45,
+        "specialattack": 85,
+        "specialdefense": 50,
+        "speed": 45
+      },
+      "height": 10,
+      "weight": 120,
+      "description": "The body is soft and rubbery. When angered, it will suck in air and inflate itself to an enormous size.",
+      "baseExperienceYield": 218,
+      "sprites": {
+        "front_default": "./sprites/pokemon/40_wigglytuff.png",
+        "front_shiny": "./sprites/pokemon/40_wigglytuff_shiny.png"
+      }
+    },
+    {
+      "id": 41,
+      "apiName": "zubat",
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "specialattack": 30,
+        "specialdefense": 40,
+        "speed": 55
+      },
+      "height": 8,
+      "weight": 75,
+      "description": "Forms colonies in perpetually dark places. Uses ultrasonic waves to identify and approach targets.",
+      "baseExperienceYield": 49,
+      "sprites": {
+        "front_default": "./sprites/pokemon/41_zubat.png",
+        "front_shiny": "./sprites/pokemon/41_zubat_shiny.png"
+      }
+    },
+    {
+      "id": 42,
+      "apiName": "golbat",
+      "types": [
+        "poison",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "specialattack": 65,
+        "specialdefense": 75,
+        "speed": 90
+      },
+      "height": 16,
+      "weight": 550,
+      "description": "Once it strikes, it will not stop draining energy from the victim even if it gets too heavy to fly.",
+      "baseExperienceYield": 159,
+      "sprites": {
+        "front_default": "./sprites/pokemon/42_golbat.png",
+        "front_shiny": "./sprites/pokemon/42_golbat_shiny.png"
+      }
+    },
+    {
+      "id": 43,
+      "apiName": "oddish",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 55,
+        "specialattack": 75,
+        "specialdefense": 65,
+        "speed": 30
+      },
+      "height": 5,
+      "weight": 54,
+      "description": "During the day, it keeps its face buried in the ground. At night, it wanders around sowing its seeds.",
+      "baseExperienceYield": 64,
+      "sprites": {
+        "front_default": "./sprites/pokemon/43_oddish.png",
+        "front_shiny": "./sprites/pokemon/43_oddish_shiny.png"
+      }
+    },
+    {
+      "id": 44,
+      "apiName": "gloom",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 70,
+        "specialattack": 85,
+        "specialdefense": 75,
+        "speed": 40
+      },
+      "height": 8,
+      "weight": 86,
+      "description": "The fluid that oozes from its mouth isn't drool. It is a nectar that is used to attract prey.",
+      "baseExperienceYield": 138,
+      "sprites": {
+        "front_default": "./sprites/pokemon/44_gloom.png",
+        "front_shiny": "./sprites/pokemon/44_gloom_shiny.png"
+      }
+    },
+    {
+      "id": 45,
+      "apiName": "vileplume",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 85,
+        "specialattack": 110,
+        "specialdefense": 90,
+        "speed": 50
+      },
+      "height": 12,
+      "weight": 186,
+      "description": "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
+      "baseExperienceYield": 245,
+      "sprites": {
+        "front_default": "./sprites/pokemon/45_vileplume.png",
+        "front_shiny": "./sprites/pokemon/45_vileplume_shiny.png"
+      }
+    },
+    {
+      "id": 46,
+      "apiName": "paras",
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 70,
+        "defense": 55,
+        "specialattack": 45,
+        "specialdefense": 55,
+        "speed": 25
+      },
+      "height": 3,
+      "weight": 54,
+      "description": "Burrows to suck tree roots. The mushrooms on its back grow by draw­ ing nutrients from the bug host.",
+      "baseExperienceYield": 57,
+      "sprites": {
+        "front_default": "./sprites/pokemon/46_paras.png",
+        "front_shiny": "./sprites/pokemon/46_paras_shiny.png"
+      }
+    },
+    {
+      "id": 47,
+      "apiName": "parasect",
+      "types": [
+        "bug",
+        "grass"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 95,
+        "defense": 80,
+        "specialattack": 60,
+        "specialdefense": 80,
+        "speed": 30
+      },
+      "height": 10,
+      "weight": 295,
+      "description": "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
+      "baseExperienceYield": 142,
+      "sprites": {
+        "front_default": "./sprites/pokemon/47_parasect.png",
+        "front_shiny": "./sprites/pokemon/47_parasect_shiny.png"
+      }
+    },
+    {
+      "id": 48,
+      "apiName": "venonat",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "specialattack": 40,
+        "specialdefense": 55,
+        "speed": 45
+      },
+      "height": 10,
+      "weight": 300,
+      "description": "Lives in the shadows of tall trees where it eats insects. It is attracted by light at night.",
+      "baseExperienceYield": 61,
+      "sprites": {
+        "front_default": "./sprites/pokemon/48_venonat.png",
+        "front_shiny": "./sprites/pokemon/48_venonat_shiny.png"
+      }
+    },
+    {
+      "id": 49,
+      "apiName": "venomoth",
+      "types": [
+        "bug",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 65,
+        "defense": 60,
+        "specialattack": 90,
+        "specialdefense": 75,
+        "speed": 90
+      },
+      "height": 15,
+      "weight": 125,
+      "description": "The dustlike scales covering its wings are color-coded to indicate the kinds of poison it has.",
+      "baseExperienceYield": 158,
+      "sprites": {
+        "front_default": "./sprites/pokemon/49_venomoth.png",
+        "front_shiny": "./sprites/pokemon/49_venomoth_shiny.png"
+      }
+    },
+    {
+      "id": 50,
+      "apiName": "diglett",
+      "types": [
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 10,
+        "attack": 55,
+        "defense": 25,
+        "specialattack": 35,
+        "specialdefense": 45,
+        "speed": 95
+      },
+      "height": 2,
+      "weight": 8,
+      "description": "Lives about one yard underground where it feeds on plant roots. It sometimes appears above ground.",
+      "baseExperienceYield": 53,
+      "sprites": {
+        "front_default": "./sprites/pokemon/50_diglett.png",
+        "front_shiny": "./sprites/pokemon/50_diglett_shiny.png"
+      }
+    },
+    {
+      "id": 51,
+      "apiName": "dugtrio",
+      "types": [
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 100,
+        "defense": 50,
+        "specialattack": 50,
+        "specialdefense": 70,
+        "speed": 120
+      },
+      "height": 7,
+      "weight": 333,
+      "description": "A team of DIGLETT triplets. It triggers huge earthquakes by burrowing 60 miles underground.",
+      "baseExperienceYield": 149,
+      "sprites": {
+        "front_default": "./sprites/pokemon/51_dugtrio.png",
+        "front_shiny": "./sprites/pokemon/51_dugtrio_shiny.png"
+      }
+    },
+    {
+      "id": 52,
+      "apiName": "meowth",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 35,
+        "specialattack": 40,
+        "specialdefense": 40,
+        "speed": 90
+      },
+      "height": 4,
+      "weight": 42,
+      "description": "It washes its face regularly to keep the coin on its forehead spotless. It doesn’t get along with Galarian Meowth.",
+      "baseExperienceYield": 58,
+      "sprites": {
+        "front_default": "./sprites/pokemon/52_meowth.png",
+        "front_shiny": "./sprites/pokemon/52_meowth_shiny.png"
+      }
+    },
+    {
+      "id": 53,
+      "apiName": "persian",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 60,
+        "specialattack": 65,
+        "specialdefense": 65,
+        "speed": 115
+      },
+      "height": 10,
+      "weight": 320,
+      "description": "Although its fur has many admirers, it is tough to raise as a pet because of its fickle meanness.",
+      "baseExperienceYield": 154,
+      "sprites": {
+        "front_default": "./sprites/pokemon/53_persian.png",
+        "front_shiny": "./sprites/pokemon/53_persian_shiny.png"
+      }
+    },
+    {
+      "id": 54,
+      "apiName": "psyduck",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 52,
+        "defense": 48,
+        "specialattack": 65,
+        "specialdefense": 50,
+        "speed": 55
+      },
+      "height": 8,
+      "weight": 196,
+      "description": "While lulling its enemies with its vacant look, this wily POKéMON will use psychokinetic powers.",
+      "baseExperienceYield": 64,
+      "sprites": {
+        "front_default": "./sprites/pokemon/54_psyduck.png",
+        "front_shiny": "./sprites/pokemon/54_psyduck_shiny.png"
+      }
+    },
+    {
+      "id": 55,
+      "apiName": "golduck",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 82,
+        "defense": 78,
+        "specialattack": 95,
+        "specialdefense": 80,
+        "speed": 85
+      },
+      "height": 17,
+      "weight": 766,
+      "description": "Often seen swim­ ming elegantly by lake shores. It is often mistaken for the Japanese monster, Kappa.",
+      "baseExperienceYield": 175,
+      "sprites": {
+        "front_default": "./sprites/pokemon/55_golduck.png",
+        "front_shiny": "./sprites/pokemon/55_golduck_shiny.png"
+      }
+    },
+    {
+      "id": 56,
+      "apiName": "mankey",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 35,
+        "specialattack": 35,
+        "specialdefense": 45,
+        "speed": 70
+      },
+      "height": 5,
+      "weight": 280,
+      "description": "Extremely quick to anger. It could be docile one moment then thrashing away the next instant.",
+      "baseExperienceYield": 61,
+      "sprites": {
+        "front_default": "./sprites/pokemon/56_mankey.png",
+        "front_shiny": "./sprites/pokemon/56_mankey_shiny.png"
+      }
+    },
+    {
+      "id": 57,
+      "apiName": "primeape",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 105,
+        "defense": 60,
+        "specialattack": 60,
+        "specialdefense": 70,
+        "speed": 95
+      },
+      "height": 10,
+      "weight": 320,
+      "description": "Always furious and tenacious to boot. It will not abandon chasing its quarry until it is caught.",
+      "baseExperienceYield": 159,
+      "sprites": {
+        "front_default": "./sprites/pokemon/57_primeape.png",
+        "front_shiny": "./sprites/pokemon/57_primeape_shiny.png"
+      }
+    },
+    {
+      "id": 58,
+      "apiName": "growlithe",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 70,
+        "defense": 45,
+        "specialattack": 70,
+        "specialdefense": 50,
+        "speed": 60
+      },
+      "height": 7,
+      "weight": 190,
+      "description": "Very protective of its territory. It will bark and bite to repel intruders from its space.",
+      "baseExperienceYield": 70,
+      "sprites": {
+        "front_default": "./sprites/pokemon/58_growlithe.png",
+        "front_shiny": "./sprites/pokemon/58_growlithe_shiny.png"
+      }
+    },
+    {
+      "id": 59,
+      "apiName": "arcanine",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 110,
+        "defense": 80,
+        "specialattack": 100,
+        "specialdefense": 80,
+        "speed": 95
+      },
+      "height": 19,
+      "weight": 1550,
+      "description": "A POKéMON that has been admired since the past for its beauty. It runs agilely as if on wings.",
+      "baseExperienceYield": 194,
+      "sprites": {
+        "front_default": "./sprites/pokemon/59_arcanine.png",
+        "front_shiny": "./sprites/pokemon/59_arcanine_shiny.png"
+      }
+    },
+    {
+      "id": 60,
+      "apiName": "poliwag",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 50,
+        "defense": 40,
+        "specialattack": 40,
+        "specialdefense": 40,
+        "speed": 90
+      },
+      "height": 6,
+      "weight": 124,
+      "description": "Its newly grown legs prevent it from running. It appears to prefer swimming than trying to stand.",
+      "baseExperienceYield": 60,
+      "sprites": {
+        "front_default": "./sprites/pokemon/60_poliwag.png",
+        "front_shiny": "./sprites/pokemon/60_poliwag_shiny.png"
+      }
+    },
+    {
+      "id": 61,
+      "apiName": "poliwhirl",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 65,
+        "specialattack": 50,
+        "specialdefense": 50,
+        "speed": 90
+      },
+      "height": 10,
+      "weight": 200,
+      "description": "Capable of living in or out of water. When out of water, it sweats to keep its body slimy.",
+      "baseExperienceYield": 135,
+      "sprites": {
+        "front_default": "./sprites/pokemon/61_poliwhirl.png",
+        "front_shiny": "./sprites/pokemon/61_poliwhirl_shiny.png"
+      }
+    },
+    {
+      "id": 62,
+      "apiName": "poliwrath",
+      "types": [
+        "water",
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 95,
+        "specialattack": 70,
+        "specialdefense": 90,
+        "speed": 70
+      },
+      "height": 13,
+      "weight": 540,
+      "description": "An adept swimmer at both the front crawl and breast stroke. Easily overtakes the best human swimmers.",
+      "baseExperienceYield": 255,
+      "sprites": {
+        "front_default": "./sprites/pokemon/62_poliwrath.png",
+        "front_shiny": "./sprites/pokemon/62_poliwrath_shiny.png"
+      }
+    },
+    {
+      "id": 63,
+      "apiName": "abra",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 25,
+        "attack": 20,
+        "defense": 15,
+        "specialattack": 105,
+        "specialdefense": 55,
+        "speed": 90
+      },
+      "height": 9,
+      "weight": 195,
+      "description": "Using its ability to read minds, it will identify impending danger and TELEPORT to safety.",
+      "baseExperienceYield": 62,
+      "sprites": {
+        "front_default": "./sprites/pokemon/63_abra.png",
+        "front_shiny": "./sprites/pokemon/63_abra_shiny.png"
+      }
+    },
+    {
+      "id": 64,
+      "apiName": "kadabra",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 35,
+        "defense": 30,
+        "specialattack": 120,
+        "specialdefense": 70,
+        "speed": 105
+      },
+      "height": 13,
+      "weight": 565,
+      "description": "It emits special alpha waves from its body that induce headaches just by being close by.",
+      "baseExperienceYield": 140,
+      "sprites": {
+        "front_default": "./sprites/pokemon/64_kadabra.png",
+        "front_shiny": "./sprites/pokemon/64_kadabra_shiny.png"
+      }
+    },
+    {
+      "id": 65,
+      "apiName": "alakazam",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 45,
+        "specialattack": 135,
+        "specialdefense": 95,
+        "speed": 120
+      },
+      "height": 15,
+      "weight": 480,
+      "description": "Its brain can out­ perform a super­ computer. Its intelligence quotient is said to be 5,000.",
+      "baseExperienceYield": 250,
+      "sprites": {
+        "front_default": "./sprites/pokemon/65_alakazam.png",
+        "front_shiny": "./sprites/pokemon/65_alakazam_shiny.png"
+      }
+    },
+    {
+      "id": 66,
+      "apiName": "machop",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 50,
+        "specialattack": 35,
+        "specialdefense": 35,
+        "speed": 35
+      },
+      "height": 8,
+      "weight": 195,
+      "description": "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+      "baseExperienceYield": 61,
+      "sprites": {
+        "front_default": "./sprites/pokemon/66_machop.png",
+        "front_shiny": "./sprites/pokemon/66_machop_shiny.png"
+      }
+    },
+    {
+      "id": 67,
+      "apiName": "machoke",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 100,
+        "defense": 70,
+        "specialattack": 50,
+        "specialdefense": 60,
+        "speed": 45
+      },
+      "height": 15,
+      "weight": 705,
+      "description": "Its muscular body is so powerful, it must wear a power save belt to be able to regulate its motions.",
+      "baseExperienceYield": 142,
+      "sprites": {
+        "front_default": "./sprites/pokemon/67_machoke.png",
+        "front_shiny": "./sprites/pokemon/67_machoke_shiny.png"
+      }
+    },
+    {
+      "id": 68,
+      "apiName": "machamp",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 130,
+        "defense": 80,
+        "specialattack": 65,
+        "specialdefense": 85,
+        "speed": 55
+      },
+      "height": 16,
+      "weight": 1300,
+      "description": "Using its heavy muscles, it throws powerful punches that can send the victim clear over the horizon.",
+      "baseExperienceYield": 253,
+      "sprites": {
+        "front_default": "./sprites/pokemon/68_machamp.png",
+        "front_shiny": "./sprites/pokemon/68_machamp_shiny.png"
+      }
+    },
+    {
+      "id": 69,
+      "apiName": "bellsprout",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 75,
+        "defense": 35,
+        "specialattack": 70,
+        "specialdefense": 30,
+        "speed": 40
+      },
+      "height": 7,
+      "weight": 40,
+      "description": "A carnivorous POKéMON that traps and eats bugs. It uses its root feet to soak up needed moisture.",
+      "baseExperienceYield": 60,
+      "sprites": {
+        "front_default": "./sprites/pokemon/69_bellsprout.png",
+        "front_shiny": "./sprites/pokemon/69_bellsprout_shiny.png"
+      }
+    },
+    {
+      "id": 70,
+      "apiName": "weepinbell",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 50,
+        "specialattack": 85,
+        "specialdefense": 45,
+        "speed": 55
+      },
+      "height": 10,
+      "weight": 64,
+      "description": "It spits out POISONPOWDER to immobilize the enemy and then finishes it with a spray of ACID.",
+      "baseExperienceYield": 137,
+      "sprites": {
+        "front_default": "./sprites/pokemon/70_weepinbell.png",
+        "front_shiny": "./sprites/pokemon/70_weepinbell_shiny.png"
+      }
+    },
+    {
+      "id": 71,
+      "apiName": "victreebel",
+      "types": [
+        "grass",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "specialattack": 100,
+        "specialdefense": 70,
+        "speed": 70
+      },
+      "height": 17,
+      "weight": 155,
+      "description": "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+      "baseExperienceYield": 221,
+      "sprites": {
+        "front_default": "./sprites/pokemon/71_victreebel.png",
+        "front_shiny": "./sprites/pokemon/71_victreebel_shiny.png"
+      }
+    },
+    {
+      "id": 72,
+      "apiName": "tentacool",
+      "types": [
+        "water",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 40,
+        "defense": 35,
+        "specialattack": 50,
+        "specialdefense": 100,
+        "speed": 70
+      },
+      "height": 9,
+      "weight": 455,
+      "description": "Drifts in shallow seas. Anglers who hook them by accident are often punished by its stinging acid.",
+      "baseExperienceYield": 67,
+      "sprites": {
+        "front_default": "./sprites/pokemon/72_tentacool.png",
+        "front_shiny": "./sprites/pokemon/72_tentacool_shiny.png"
+      }
+    },
+    {
+      "id": 73,
+      "apiName": "tentacruel",
+      "types": [
+        "water",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 65,
+        "specialattack": 80,
+        "specialdefense": 120,
+        "speed": 100
+      },
+      "height": 16,
+      "weight": 550,
+      "description": "The tentacles are normally kept short. On hunts, they are extended to ensnare and immobilize prey.",
+      "baseExperienceYield": 180,
+      "sprites": {
+        "front_default": "./sprites/pokemon/73_tentacruel.png",
+        "front_shiny": "./sprites/pokemon/73_tentacruel_shiny.png"
+      }
+    },
+    {
+      "id": 74,
+      "apiName": "geodude",
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 80,
+        "defense": 100,
+        "specialattack": 30,
+        "specialdefense": 30,
+        "speed": 20
+      },
+      "height": 4,
+      "weight": 200,
+      "description": "Found in fields and mountains. Mistaking them for boulders, people often step or trip on them.",
+      "baseExperienceYield": 60,
+      "sprites": {
+        "front_default": "./sprites/pokemon/74_geodude.png",
+        "front_shiny": "./sprites/pokemon/74_geodude_shiny.png"
+      }
+    },
+    {
+      "id": 75,
+      "apiName": "graveler",
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 95,
+        "defense": 115,
+        "specialattack": 45,
+        "specialdefense": 45,
+        "speed": 35
+      },
+      "height": 10,
+      "weight": 1050,
+      "description": "Rolls down slopes to move. It rolls over any obstacle without slowing or changing its direction.",
+      "baseExperienceYield": 137,
+      "sprites": {
+        "front_default": "./sprites/pokemon/75_graveler.png",
+        "front_shiny": "./sprites/pokemon/75_graveler_shiny.png"
+      }
+    },
+    {
+      "id": 76,
+      "apiName": "golem",
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 120,
+        "defense": 130,
+        "specialattack": 55,
+        "specialdefense": 65,
+        "speed": 45
+      },
+      "height": 14,
+      "weight": 3000,
+      "description": "Its boulder-like body is extremely hard. It can easily withstand dynamite blasts without damage.",
+      "baseExperienceYield": 223,
+      "sprites": {
+        "front_default": "./sprites/pokemon/76_golem.png",
+        "front_shiny": "./sprites/pokemon/76_golem_shiny.png"
+      }
+    },
+    {
+      "id": 77,
+      "apiName": "ponyta",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 85,
+        "defense": 55,
+        "specialattack": 65,
+        "specialdefense": 65,
+        "speed": 90
+      },
+      "height": 10,
+      "weight": 300,
+      "description": "Its hooves are 10 times harder than diamonds. It can trample anything completely flat in little time.",
+      "baseExperienceYield": 82,
+      "sprites": {
+        "front_default": "./sprites/pokemon/77_ponyta.png",
+        "front_shiny": "./sprites/pokemon/77_ponyta_shiny.png"
+      }
+    },
+    {
+      "id": 78,
+      "apiName": "rapidash",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 100,
+        "defense": 70,
+        "specialattack": 80,
+        "specialdefense": 80,
+        "speed": 105
+      },
+      "height": 17,
+      "weight": 950,
+      "description": "Very competitive, this POKéMON will chase anything that moves fast in the hopes of racing it.",
+      "baseExperienceYield": 175,
+      "sprites": {
+        "front_default": "./sprites/pokemon/78_rapidash.png",
+        "front_shiny": "./sprites/pokemon/78_rapidash_shiny.png"
+      }
+    },
+    {
+      "id": 79,
+      "apiName": "slowpoke",
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 65,
+        "defense": 65,
+        "specialattack": 40,
+        "specialdefense": 40,
+        "speed": 15
+      },
+      "height": 12,
+      "weight": 360,
+      "description": "Incredibly slow and dopey. It takes 5 seconds for it to feel pain when under attack.",
+      "baseExperienceYield": 63,
+      "sprites": {
+        "front_default": "./sprites/pokemon/79_slowpoke.png",
+        "front_shiny": "./sprites/pokemon/79_slowpoke_shiny.png"
+      }
+    },
+    {
+      "id": 80,
+      "apiName": "slowbro",
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "attack": 75,
+        "defense": 110,
+        "specialattack": 100,
+        "specialdefense": 80,
+        "speed": 30
+      },
+      "height": 16,
+      "weight": 785,
+      "description": "The SHELLDER that is latched onto SLOWPOKE's tail is said to feed on the host's left over scraps.",
+      "baseExperienceYield": 172,
+      "sprites": {
+        "front_default": "./sprites/pokemon/80_slowbro.png",
+        "front_shiny": "./sprites/pokemon/80_slowbro_shiny.png"
+      }
+    },
+    {
+      "id": 81,
+      "apiName": "magnemite",
+      "types": [
+        "electric",
+        "steel"
+      ],
+      "baseStats": {
+        "hp": 25,
+        "attack": 35,
+        "defense": 70,
+        "specialattack": 95,
+        "specialdefense": 55,
+        "speed": 45
+      },
+      "height": 3,
+      "weight": 60,
+      "description": "Uses anti-gravity to stay suspended. Appears without warning and uses THUNDER WAVE and similar moves.",
+      "baseExperienceYield": 65,
+      "sprites": {
+        "front_default": "./sprites/pokemon/81_magnemite.png",
+        "front_shiny": "./sprites/pokemon/81_magnemite_shiny.png"
+      }
+    },
+    {
+      "id": 82,
+      "apiName": "magneton",
+      "types": [
+        "electric",
+        "steel"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 60,
+        "defense": 95,
+        "specialattack": 120,
+        "specialdefense": 70,
+        "speed": 70
+      },
+      "height": 10,
+      "weight": 600,
+      "description": "Formed by several MAGNEMITEs linked together. They frequently appear when sunspots flare up.",
+      "baseExperienceYield": 163,
+      "sprites": {
+        "front_default": "./sprites/pokemon/82_magneton.png",
+        "front_shiny": "./sprites/pokemon/82_magneton_shiny.png"
+      }
+    },
+    {
+      "id": 83,
+      "apiName": "farfetchd",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 52,
+        "attack": 90,
+        "defense": 55,
+        "specialattack": 58,
+        "specialdefense": 62,
+        "speed": 60
+      },
+      "height": 8,
+      "weight": 150,
+      "description": "The sprig of green onions it holds is its weapon. It is used much like a metal sword.",
+      "baseExperienceYield": 132,
+      "sprites": {
+        "front_default": "./sprites/pokemon/83_farfetchd.png",
+        "front_shiny": "./sprites/pokemon/83_farfetchd_shiny.png"
+      }
+    },
+    {
+      "id": 84,
+      "apiName": "doduo",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 85,
+        "defense": 45,
+        "specialattack": 35,
+        "specialdefense": 35,
+        "speed": 75
+      },
+      "height": 14,
+      "weight": 392,
+      "description": "A bird that makes up for its poor flying with its fast foot speed. Leaves giant footprints.",
+      "baseExperienceYield": 62,
+      "sprites": {
+        "front_default": "./sprites/pokemon/84_doduo.png",
+        "front_shiny": "./sprites/pokemon/84_doduo_shiny.png"
+      }
+    },
+    {
+      "id": 85,
+      "apiName": "dodrio",
+      "types": [
+        "normal",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 110,
+        "defense": 70,
+        "specialattack": 60,
+        "specialdefense": 60,
+        "speed": 110
+      },
+      "height": 18,
+      "weight": 852,
+      "description": "Uses its three brains to execute complex plans. While two heads sleep, one head stays awake.",
+      "baseExperienceYield": 165,
+      "sprites": {
+        "front_default": "./sprites/pokemon/85_dodrio.png",
+        "front_shiny": "./sprites/pokemon/85_dodrio_shiny.png"
+      }
+    },
+    {
+      "id": 86,
+      "apiName": "seel",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 45,
+        "defense": 55,
+        "specialattack": 45,
+        "specialdefense": 70,
+        "speed": 45
+      },
+      "height": 11,
+      "weight": 900,
+      "description": "The protruding horn on its head is very hard. It is used for bashing through thick ice.",
+      "baseExperienceYield": 65,
+      "sprites": {
+        "front_default": "./sprites/pokemon/86_seel.png",
+        "front_shiny": "./sprites/pokemon/86_seel_shiny.png"
+      }
+    },
+    {
+      "id": 87,
+      "apiName": "dewgong",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 80,
+        "specialattack": 70,
+        "specialdefense": 95,
+        "speed": 70
+      },
+      "height": 17,
+      "weight": 1200,
+      "description": "Stores thermal energy in its body. Swims at a steady 8 knots even in intensely cold waters.",
+      "baseExperienceYield": 166,
+      "sprites": {
+        "front_default": "./sprites/pokemon/87_dewgong.png",
+        "front_shiny": "./sprites/pokemon/87_dewgong_shiny.png"
+      }
+    },
+    {
+      "id": 88,
+      "apiName": "grimer",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 50,
+        "specialattack": 40,
+        "specialdefense": 50,
+        "speed": 25
+      },
+      "height": 9,
+      "weight": 300,
+      "description": "Appears in filthy areas. Thrives by sucking up polluted sludge that is pumped out of factories.",
+      "baseExperienceYield": 65,
+      "sprites": {
+        "front_default": "./sprites/pokemon/88_grimer.png",
+        "front_shiny": "./sprites/pokemon/88_grimer_shiny.png"
+      }
+    },
+    {
+      "id": 89,
+      "apiName": "muk",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 105,
+        "attack": 105,
+        "defense": 75,
+        "specialattack": 65,
+        "specialdefense": 100,
+        "speed": 50
+      },
+      "height": 12,
+      "weight": 300,
+      "description": "Thickly covered with a filthy, vile sludge. It is so toxic, even its footprints contain poison.",
+      "baseExperienceYield": 175,
+      "sprites": {
+        "front_default": "./sprites/pokemon/89_muk.png",
+        "front_shiny": "./sprites/pokemon/89_muk_shiny.png"
+      }
+    },
+    {
+      "id": 90,
+      "apiName": "shellder",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 65,
+        "defense": 100,
+        "specialattack": 45,
+        "specialdefense": 25,
+        "speed": 40
+      },
+      "height": 3,
+      "weight": 40,
+      "description": "Its hard shell repels any kind of attack. It is vulnerable only when its shell is open.",
+      "baseExperienceYield": 61,
+      "sprites": {
+        "front_default": "./sprites/pokemon/90_shellder.png",
+        "front_shiny": "./sprites/pokemon/90_shellder_shiny.png"
+      }
+    },
+    {
+      "id": 91,
+      "apiName": "cloyster",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 95,
+        "defense": 180,
+        "specialattack": 85,
+        "specialdefense": 45,
+        "speed": 70
+      },
+      "height": 15,
+      "weight": 1325,
+      "description": "When attacked, it launches its horns in quick volleys. Its innards have never been seen.",
+      "baseExperienceYield": 184,
+      "sprites": {
+        "front_default": "./sprites/pokemon/91_cloyster.png",
+        "front_shiny": "./sprites/pokemon/91_cloyster_shiny.png"
+      }
+    },
+    {
+      "id": 92,
+      "apiName": "gastly",
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 35,
+        "defense": 30,
+        "specialattack": 100,
+        "specialdefense": 35,
+        "speed": 80
+      },
+      "height": 13,
+      "weight": 1,
+      "description": "Almost invisible, this gaseous POKéMON cloaks the target and puts it to sleep without notice.",
+      "baseExperienceYield": 62,
+      "sprites": {
+        "front_default": "./sprites/pokemon/92_gastly.png",
+        "front_shiny": "./sprites/pokemon/92_gastly_shiny.png"
+      }
+    },
+    {
+      "id": 93,
+      "apiName": "haunter",
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 50,
+        "defense": 45,
+        "specialattack": 115,
+        "specialdefense": 55,
+        "speed": 95
+      },
+      "height": 16,
+      "weight": 1,
+      "description": "Because of its ability to slip through block walls, it is said to be from an­ other dimension.",
+      "baseExperienceYield": 142,
+      "sprites": {
+        "front_default": "./sprites/pokemon/93_haunter.png",
+        "front_shiny": "./sprites/pokemon/93_haunter_shiny.png"
+      }
+    },
+    {
+      "id": 94,
+      "apiName": "gengar",
+      "types": [
+        "ghost",
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "specialattack": 130,
+        "specialdefense": 75,
+        "speed": 110
+      },
+      "height": 15,
+      "weight": 405,
+      "description": "Under a full moon, this POKéMON likes to mimic the shadows of people and laugh at their fright.",
+      "baseExperienceYield": 250,
+      "sprites": {
+        "front_default": "./sprites/pokemon/94_gengar.png",
+        "front_shiny": "./sprites/pokemon/94_gengar_shiny.png"
+      }
+    },
+    {
+      "id": 95,
+      "apiName": "onix",
+      "types": [
+        "rock",
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 45,
+        "defense": 160,
+        "specialattack": 30,
+        "specialdefense": 45,
+        "speed": 70
+      },
+      "height": 88,
+      "weight": 2100,
+      "description": "As it grows, the stone portions of its body harden to become similar to a diamond, but colored black.",
+      "baseExperienceYield": 77,
+      "sprites": {
+        "front_default": "./sprites/pokemon/95_onix.png",
+        "front_shiny": "./sprites/pokemon/95_onix_shiny.png"
+      }
+    },
+    {
+      "id": 96,
+      "apiName": "drowzee",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 48,
+        "defense": 45,
+        "specialattack": 43,
+        "specialdefense": 90,
+        "speed": 42
+      },
+      "height": 10,
+      "weight": 324,
+      "description": "Puts enemies to sleep then eats their dreams. Occasionally gets sick from eating bad dreams.",
+      "baseExperienceYield": 66,
+      "sprites": {
+        "front_default": "./sprites/pokemon/96_drowzee.png",
+        "front_shiny": "./sprites/pokemon/96_drowzee_shiny.png"
+      }
+    },
+    {
+      "id": 97,
+      "apiName": "hypno",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 85,
+        "attack": 73,
+        "defense": 70,
+        "specialattack": 73,
+        "specialdefense": 115,
+        "speed": 67
+      },
+      "height": 16,
+      "weight": 756,
+      "description": "When it locks eyes with an enemy, it will use a mix of PSI moves such as HYPNOSIS and CONFUSION.",
+      "baseExperienceYield": 169,
+      "sprites": {
+        "front_default": "./sprites/pokemon/97_hypno.png",
+        "front_shiny": "./sprites/pokemon/97_hypno_shiny.png"
+      }
+    },
+    {
+      "id": 98,
+      "apiName": "krabby",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 105,
+        "defense": 90,
+        "specialattack": 25,
+        "specialdefense": 25,
+        "speed": 50
+      },
+      "height": 4,
+      "weight": 65,
+      "description": "Its pincers are not only powerful weapons, they are used for balance when walking sideways.",
+      "baseExperienceYield": 65,
+      "sprites": {
+        "front_default": "./sprites/pokemon/98_krabby.png",
+        "front_shiny": "./sprites/pokemon/98_krabby_shiny.png"
+      }
+    },
+    {
+      "id": 99,
+      "apiName": "kingler",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 130,
+        "defense": 115,
+        "specialattack": 50,
+        "specialdefense": 50,
+        "speed": 75
+      },
+      "height": 13,
+      "weight": 600,
+      "description": "The large pincer has 10000 hp of crushing power. However, its huge size makes it unwieldy to use.",
+      "baseExperienceYield": 166,
+      "sprites": {
+        "front_default": "./sprites/pokemon/99_kingler.png",
+        "front_shiny": "./sprites/pokemon/99_kingler_shiny.png"
+      }
+    },
+    {
+      "id": 100,
+      "apiName": "voltorb",
+      "types": [
+        "electric"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 30,
+        "defense": 50,
+        "specialattack": 55,
+        "specialdefense": 55,
+        "speed": 100
+      },
+      "height": 5,
+      "weight": 104,
+      "description": "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
+      "baseExperienceYield": 66,
+      "sprites": {
+        "front_default": "./sprites/pokemon/100_voltorb.png",
+        "front_shiny": "./sprites/pokemon/100_voltorb_shiny.png"
+      }
+    },
+    {
+      "id": 101,
+      "apiName": "electrode",
+      "types": [
+        "electric"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 70,
+        "specialattack": 80,
+        "specialdefense": 80,
+        "speed": 150
+      },
+      "height": 12,
+      "weight": 666,
+      "description": "It stores electric energy under very high pressure. It often explodes with little or no provocation.",
+      "baseExperienceYield": 172,
+      "sprites": {
+        "front_default": "./sprites/pokemon/101_electrode.png",
+        "front_shiny": "./sprites/pokemon/101_electrode_shiny.png"
+      }
+    },
+    {
+      "id": 102,
+      "apiName": "exeggcute",
+      "types": [
+        "grass",
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 40,
+        "defense": 80,
+        "specialattack": 60,
+        "specialdefense": 45,
+        "speed": 40
+      },
+      "height": 4,
+      "weight": 25,
+      "description": "Often mistaken for eggs. When disturbed, they quickly gather and attack in swarms.",
+      "baseExperienceYield": 65,
+      "sprites": {
+        "front_default": "./sprites/pokemon/102_exeggcute.png",
+        "front_shiny": "./sprites/pokemon/102_exeggcute_shiny.png"
+      }
+    },
+    {
+      "id": 103,
+      "apiName": "exeggutor",
+      "types": [
+        "grass",
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "attack": 95,
+        "defense": 85,
+        "specialattack": 125,
+        "specialdefense": 75,
+        "speed": 55
+      },
+      "height": 20,
+      "weight": 1200,
+      "description": "Legend has it that on rare occasions, one of its heads will drop off and continue on as an EXEGGCUTE.",
+      "baseExperienceYield": 186,
+      "sprites": {
+        "front_default": "./sprites/pokemon/103_exeggutor.png",
+        "front_shiny": "./sprites/pokemon/103_exeggutor_shiny.png"
+      }
+    },
+    {
+      "id": 104,
+      "apiName": "cubone",
+      "types": [
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 50,
+        "defense": 95,
+        "specialattack": 40,
+        "specialdefense": 50,
+        "speed": 35
+      },
+      "height": 4,
+      "weight": 65,
+      "description": "Because it never removes its skull helmet, no one has ever seen this POKéMON's real face.",
+      "baseExperienceYield": 64,
+      "sprites": {
+        "front_default": "./sprites/pokemon/104_cubone.png",
+        "front_shiny": "./sprites/pokemon/104_cubone_shiny.png"
+      }
+    },
+    {
+      "id": 105,
+      "apiName": "marowak",
+      "types": [
+        "ground"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 110,
+        "specialattack": 50,
+        "specialdefense": 80,
+        "speed": 45
+      },
+      "height": 10,
+      "weight": 450,
+      "description": "The bone it holds is its key weapon. It throws the bone skillfully like a boomerang to KO targets.",
+      "baseExperienceYield": 149,
+      "sprites": {
+        "front_default": "./sprites/pokemon/105_marowak.png",
+        "front_shiny": "./sprites/pokemon/105_marowak_shiny.png"
+      }
+    },
+    {
+      "id": 106,
+      "apiName": "hitmonlee",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 120,
+        "defense": 53,
+        "specialattack": 35,
+        "specialdefense": 110,
+        "speed": 87
+      },
+      "height": 15,
+      "weight": 498,
+      "description": "When in a hurry, its legs lengthen progressively. It runs smoothly with extra long, loping strides.",
+      "baseExperienceYield": 159,
+      "sprites": {
+        "front_default": "./sprites/pokemon/106_hitmonlee.png",
+        "front_shiny": "./sprites/pokemon/106_hitmonlee_shiny.png"
+      }
+    },
+    {
+      "id": 107,
+      "apiName": "hitmonchan",
+      "types": [
+        "fighting"
+      ],
+      "baseStats": {
+        "hp": 50,
+        "attack": 105,
+        "defense": 79,
+        "specialattack": 35,
+        "specialdefense": 110,
+        "speed": 76
+      },
+      "height": 14,
+      "weight": 502,
+      "description": "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
+      "baseExperienceYield": 159,
+      "sprites": {
+        "front_default": "./sprites/pokemon/107_hitmonchan.png",
+        "front_shiny": "./sprites/pokemon/107_hitmonchan_shiny.png"
+      }
+    },
+    {
+      "id": 108,
+      "apiName": "lickitung",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 55,
+        "defense": 75,
+        "specialattack": 60,
+        "specialdefense": 75,
+        "speed": 30
+      },
+      "height": 12,
+      "weight": 655,
+      "description": "Its tongue can be extended like a chameleon's. It leaves a tingling sensation when it licks enemies.",
+      "baseExperienceYield": 77,
+      "sprites": {
+        "front_default": "./sprites/pokemon/108_lickitung.png",
+        "front_shiny": "./sprites/pokemon/108_lickitung_shiny.png"
+      }
+    },
+    {
+      "id": 109,
+      "apiName": "koffing",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 65,
+        "defense": 95,
+        "specialattack": 60,
+        "specialdefense": 45,
+        "speed": 35
+      },
+      "height": 6,
+      "weight": 10,
+      "description": "Because it stores several kinds of toxic gases in its body, it is prone to exploding without warning.",
+      "baseExperienceYield": 68,
+      "sprites": {
+        "front_default": "./sprites/pokemon/109_koffing.png",
+        "front_shiny": "./sprites/pokemon/109_koffing_shiny.png"
+      }
+    },
+    {
+      "id": 110,
+      "apiName": "weezing",
+      "types": [
+        "poison"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 90,
+        "defense": 120,
+        "specialattack": 85,
+        "specialdefense": 70,
+        "speed": 60
+      },
+      "height": 12,
+      "weight": 95,
+      "description": "Where two kinds of poison gases meet, 2 KOFFINGs can fuse into a WEEZING over many years.",
+      "baseExperienceYield": 172,
+      "sprites": {
+        "front_default": "./sprites/pokemon/110_weezing.png",
+        "front_shiny": "./sprites/pokemon/110_weezing_shiny.png"
+      }
+    },
+    {
+      "id": 111,
+      "apiName": "rhyhorn",
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 85,
+        "defense": 95,
+        "specialattack": 30,
+        "specialdefense": 30,
+        "speed": 25
+      },
+      "height": 10,
+      "weight": 1150,
+      "description": "A POKéMON with a one-track mind. Once it charges, it won't stop running until it falls asleep.",
+      "baseExperienceYield": 69,
+      "sprites": {
+        "front_default": "./sprites/pokemon/111_rhyhorn.png",
+        "front_shiny": "./sprites/pokemon/111_rhyhorn_shiny.png"
+      }
+    },
+    {
+      "id": 112,
+      "apiName": "rhydon",
+      "types": [
+        "ground",
+        "rock"
+      ],
+      "baseStats": {
+        "hp": 105,
+        "attack": 130,
+        "defense": 120,
+        "specialattack": 45,
+        "specialdefense": 45,
+        "speed": 40
+      },
+      "height": 19,
+      "weight": 1200,
+      "description": "Protected by an armor-like hide, it is capable of living in molten lava of 3,600 degrees.",
+      "baseExperienceYield": 170,
+      "sprites": {
+        "front_default": "./sprites/pokemon/112_rhydon.png",
+        "front_shiny": "./sprites/pokemon/112_rhydon_shiny.png"
+      }
+    },
+    {
+      "id": 113,
+      "apiName": "chansey",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 250,
+        "attack": 5,
+        "defense": 5,
+        "specialattack": 35,
+        "specialdefense": 105,
+        "speed": 50
+      },
+      "height": 11,
+      "weight": 346,
+      "description": "A rare and elusive POKéMON that is said to bring happiness to those who manage to get it.",
+      "baseExperienceYield": 395,
+      "sprites": {
+        "front_default": "./sprites/pokemon/113_chansey.png",
+        "front_shiny": "./sprites/pokemon/113_chansey_shiny.png"
+      }
+    },
+    {
+      "id": 114,
+      "apiName": "tangela",
+      "types": [
+        "grass"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 55,
+        "defense": 115,
+        "specialattack": 100,
+        "specialdefense": 40,
+        "speed": 60
+      },
+      "height": 10,
+      "weight": 350,
+      "description": "The whole body is swathed with wide vines that are similar to sea­ weed. Its vines shake as it walks.",
+      "baseExperienceYield": 87,
+      "sprites": {
+        "front_default": "./sprites/pokemon/114_tangela.png",
+        "front_shiny": "./sprites/pokemon/114_tangela_shiny.png"
+      }
+    },
+    {
+      "id": 115,
+      "apiName": "kangaskhan",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 80,
+        "specialattack": 40,
+        "specialdefense": 80,
+        "speed": 90
+      },
+      "height": 22,
+      "weight": 800,
+      "description": "The infant rarely ventures out of its mother's protective pouch until it is 3 years old.",
+      "baseExperienceYield": 172,
+      "sprites": {
+        "front_default": "./sprites/pokemon/115_kangaskhan.png",
+        "front_shiny": "./sprites/pokemon/115_kangaskhan_shiny.png"
+      }
+    },
+    {
+      "id": 116,
+      "apiName": "horsea",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 40,
+        "defense": 70,
+        "specialattack": 70,
+        "specialdefense": 25,
+        "speed": 60
+      },
+      "height": 4,
+      "weight": 80,
+      "description": "Known to shoot down flying bugs with precision blasts of ink from the surface of the water.",
+      "baseExperienceYield": 59,
+      "sprites": {
+        "front_default": "./sprites/pokemon/116_horsea.png",
+        "front_shiny": "./sprites/pokemon/116_horsea_shiny.png"
+      }
+    },
+    {
+      "id": 117,
+      "apiName": "seadra",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 65,
+        "defense": 95,
+        "specialattack": 95,
+        "specialdefense": 45,
+        "speed": 85
+      },
+      "height": 12,
+      "weight": 250,
+      "description": "Capable of swim­ ming backwards by rapidly flapping its wing-like pectoral fins and stout tail.",
+      "baseExperienceYield": 154,
+      "sprites": {
+        "front_default": "./sprites/pokemon/117_seadra.png",
+        "front_shiny": "./sprites/pokemon/117_seadra_shiny.png"
+      }
+    },
+    {
+      "id": 118,
+      "apiName": "goldeen",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 45,
+        "attack": 67,
+        "defense": 60,
+        "specialattack": 35,
+        "specialdefense": 50,
+        "speed": 63
+      },
+      "height": 6,
+      "weight": 150,
+      "description": "Its tail fin billows like an elegant ballroom dress, giving it the nickname of the Water Queen.",
+      "baseExperienceYield": 64,
+      "sprites": {
+        "front_default": "./sprites/pokemon/118_goldeen.png",
+        "front_shiny": "./sprites/pokemon/118_goldeen_shiny.png"
+      }
+    },
+    {
+      "id": 119,
+      "apiName": "seaking",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 92,
+        "defense": 65,
+        "specialattack": 65,
+        "specialdefense": 80,
+        "speed": 68
+      },
+      "height": 13,
+      "weight": 390,
+      "description": "In the autumn spawning season, they can be seen swimming powerfully up rivers and creeks.",
+      "baseExperienceYield": 158,
+      "sprites": {
+        "front_default": "./sprites/pokemon/119_seaking.png",
+        "front_shiny": "./sprites/pokemon/119_seaking_shiny.png"
+      }
+    },
+    {
+      "id": 120,
+      "apiName": "staryu",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 45,
+        "defense": 55,
+        "specialattack": 70,
+        "specialdefense": 55,
+        "speed": 85
+      },
+      "height": 8,
+      "weight": 345,
+      "description": "If its body is torn, it can grow back if the red core remains. The core flashes at midnight.",
+      "baseExperienceYield": 68,
+      "sprites": {
+        "front_default": "./sprites/pokemon/120_staryu.png",
+        "front_shiny": "./sprites/pokemon/120_staryu_shiny.png"
+      }
+    },
+    {
+      "id": 121,
+      "apiName": "starmie",
+      "types": [
+        "water",
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 85,
+        "specialattack": 100,
+        "specialdefense": 85,
+        "speed": 115
+      },
+      "height": 11,
+      "weight": 800,
+      "description": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
+      "baseExperienceYield": 182,
+      "sprites": {
+        "front_default": "./sprites/pokemon/121_starmie.png",
+        "front_shiny": "./sprites/pokemon/121_starmie_shiny.png"
+      }
+    },
+    {
+      "id": 122,
+      "apiName": "mr-mime",
+      "types": [
+        "psychic",
+        "fairy"
+      ],
+      "baseStats": {
+        "hp": 40,
+        "attack": 45,
+        "defense": 65,
+        "specialattack": 100,
+        "specialdefense": 120,
+        "speed": 90
+      },
+      "height": 13,
+      "weight": 545,
+      "description": "If interrupted while it is miming, it will slap around the offender with its broad hands.",
+      "baseExperienceYield": 161,
+      "sprites": {
+        "front_default": "./sprites/pokemon/122_mr-mime.png",
+        "front_shiny": "./sprites/pokemon/122_mr-mime_shiny.png"
+      }
+    },
+    {
+      "id": 123,
+      "apiName": "scyther",
+      "types": [
+        "bug",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 110,
+        "defense": 80,
+        "specialattack": 55,
+        "specialdefense": 80,
+        "speed": 105
+      },
+      "height": 15,
+      "weight": 560,
+      "description": "With ninja-like agility and speed, it can create the illusion that there is more than one.",
+      "baseExperienceYield": 100,
+      "sprites": {
+        "front_default": "./sprites/pokemon/123_scyther.png",
+        "front_shiny": "./sprites/pokemon/123_scyther_shiny.png"
+      }
+    },
+    {
+      "id": 124,
+      "apiName": "jynx",
+      "types": [
+        "ice",
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 35,
+        "specialattack": 115,
+        "specialdefense": 95,
+        "speed": 95
+      },
+      "height": 14,
+      "weight": 406,
+      "description": "It seductively wiggles its hips as it walks. It can cause people to dance in unison with it.",
+      "baseExperienceYield": 159,
+      "sprites": {
+        "front_default": "./sprites/pokemon/124_jynx.png",
+        "front_shiny": "./sprites/pokemon/124_jynx_shiny.png"
+      }
+    },
+    {
+      "id": 125,
+      "apiName": "electabuzz",
+      "types": [
+        "electric"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 83,
+        "defense": 57,
+        "specialattack": 95,
+        "specialdefense": 85,
+        "speed": 105
+      },
+      "height": 11,
+      "weight": 300,
+      "description": "Normally found near power plants, they can wander away and cause major blackouts in cities.",
+      "baseExperienceYield": 172,
+      "sprites": {
+        "front_default": "./sprites/pokemon/125_electabuzz.png",
+        "front_shiny": "./sprites/pokemon/125_electabuzz_shiny.png"
+      }
+    },
+    {
+      "id": 126,
+      "apiName": "magmar",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 95,
+        "defense": 57,
+        "specialattack": 100,
+        "specialdefense": 85,
+        "speed": 93
+      },
+      "height": 13,
+      "weight": 445,
+      "description": "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+      "baseExperienceYield": 173,
+      "sprites": {
+        "front_default": "./sprites/pokemon/126_magmar.png",
+        "front_shiny": "./sprites/pokemon/126_magmar_shiny.png"
+      }
+    },
+    {
+      "id": 127,
+      "apiName": "pinsir",
+      "types": [
+        "bug"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 125,
+        "defense": 100,
+        "specialattack": 55,
+        "specialdefense": 70,
+        "speed": 85
+      },
+      "height": 15,
+      "weight": 550,
+      "description": "If it fails to crush the victim in its pincers, it will swing it around and toss it hard.",
+      "baseExperienceYield": 175,
+      "sprites": {
+        "front_default": "./sprites/pokemon/127_pinsir.png",
+        "front_shiny": "./sprites/pokemon/127_pinsir_shiny.png"
+      }
+    },
+    {
+      "id": 128,
+      "apiName": "tauros",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 75,
+        "attack": 100,
+        "defense": 95,
+        "specialattack": 40,
+        "specialdefense": 70,
+        "speed": 110
+      },
+      "height": 14,
+      "weight": 884,
+      "description": "When it targets an enemy, it charges furiously while whipping its body with its long tails.",
+      "baseExperienceYield": 172,
+      "sprites": {
+        "front_default": "./sprites/pokemon/128_tauros.png",
+        "front_shiny": "./sprites/pokemon/128_tauros_shiny.png"
+      }
+    },
+    {
+      "id": 129,
+      "apiName": "magikarp",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 20,
+        "attack": 10,
+        "defense": 55,
+        "specialattack": 15,
+        "specialdefense": 20,
+        "speed": 80
+      },
+      "height": 9,
+      "weight": 100,
+      "description": "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
+      "baseExperienceYield": 40,
+      "sprites": {
+        "front_default": "./sprites/pokemon/129_magikarp.png",
+        "front_shiny": "./sprites/pokemon/129_magikarp_shiny.png"
+      }
+    },
+    {
+      "id": 130,
+      "apiName": "gyarados",
+      "types": [
+        "water",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 95,
+        "attack": 125,
+        "defense": 79,
+        "specialattack": 60,
+        "specialdefense": 100,
+        "speed": 81
+      },
+      "height": 65,
+      "weight": 2350,
+      "description": "Once it begins to rampage, a GYARADOS will burn everything down, even in a harsh storm.",
+      "baseExperienceYield": 189,
+      "sprites": {
+        "front_default": "./sprites/pokemon/130_gyarados.png",
+        "front_shiny": "./sprites/pokemon/130_gyarados_shiny.png"
+      }
+    },
+    {
+      "id": 131,
+      "apiName": "lapras",
+      "types": [
+        "water",
+        "ice"
+      ],
+      "baseStats": {
+        "hp": 130,
+        "attack": 85,
+        "defense": 80,
+        "specialattack": 85,
+        "specialdefense": 95,
+        "speed": 60
+      },
+      "height": 25,
+      "weight": 2200,
+      "description": "A POKéMON that has been over­ hunted almost to extinction. It can ferry people across the water.",
+      "baseExperienceYield": 187,
+      "sprites": {
+        "front_default": "./sprites/pokemon/131_lapras.png",
+        "front_shiny": "./sprites/pokemon/131_lapras_shiny.png"
+      }
+    },
+    {
+      "id": 132,
+      "apiName": "ditto",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 48,
+        "attack": 48,
+        "defense": 48,
+        "specialattack": 48,
+        "specialdefense": 48,
+        "speed": 48
+      },
+      "height": 3,
+      "weight": 40,
+      "description": "Capable of copying an enemy's genetic code to instantly transform itself into a duplicate of the enemy.",
+      "baseExperienceYield": 101,
+      "sprites": {
+        "front_default": "./sprites/pokemon/132_ditto.png",
+        "front_shiny": "./sprites/pokemon/132_ditto_shiny.png"
+      }
+    },
+    {
+      "id": 133,
+      "apiName": "eevee",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "specialattack": 45,
+        "specialdefense": 65,
+        "speed": 55
+      },
+      "height": 3,
+      "weight": 65,
+      "description": "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+      "baseExperienceYield": 65,
+      "sprites": {
+        "front_default": "./sprites/pokemon/133_eevee.png",
+        "front_shiny": "./sprites/pokemon/133_eevee_shiny.png"
+      }
+    },
+    {
+      "id": 134,
+      "apiName": "vaporeon",
+      "types": [
+        "water"
+      ],
+      "baseStats": {
+        "hp": 130,
+        "attack": 65,
+        "defense": 60,
+        "specialattack": 110,
+        "specialdefense": 95,
+        "speed": 65
+      },
+      "height": 10,
+      "weight": 290,
+      "description": "Lives close to water. Its long tail is ridged with a fin which is often mistaken for a mermaid's.",
+      "baseExperienceYield": 184,
+      "sprites": {
+        "front_default": "./sprites/pokemon/134_vaporeon.png",
+        "front_shiny": "./sprites/pokemon/134_vaporeon_shiny.png"
+      }
+    },
+    {
+      "id": 135,
+      "apiName": "jolteon",
+      "types": [
+        "electric"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 60,
+        "specialattack": 110,
+        "specialdefense": 95,
+        "speed": 130
+      },
+      "height": 8,
+      "weight": 245,
+      "description": "It accumulates negative ions in the atmosphere to blast out 10000- volt lightning bolts.",
+      "baseExperienceYield": 184,
+      "sprites": {
+        "front_default": "./sprites/pokemon/135_jolteon.png",
+        "front_shiny": "./sprites/pokemon/135_jolteon_shiny.png"
+      }
+    },
+    {
+      "id": 136,
+      "apiName": "flareon",
+      "types": [
+        "fire"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 130,
+        "defense": 60,
+        "specialattack": 95,
+        "specialdefense": 110,
+        "speed": 65
+      },
+      "height": 9,
+      "weight": 250,
+      "description": "When storing thermal energy in its body, its temperature could soar to over 1600 degrees.",
+      "baseExperienceYield": 184,
+      "sprites": {
+        "front_default": "./sprites/pokemon/136_flareon.png",
+        "front_shiny": "./sprites/pokemon/136_flareon_shiny.png"
+      }
+    },
+    {
+      "id": 137,
+      "apiName": "porygon",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 65,
+        "attack": 60,
+        "defense": 70,
+        "specialattack": 85,
+        "specialdefense": 75,
+        "speed": 40
+      },
+      "height": 8,
+      "weight": 365,
+      "description": "A POKéMON that consists entirely of programming code. Capable of moving freely in cyberspace.",
+      "baseExperienceYield": 79,
+      "sprites": {
+        "front_default": "./sprites/pokemon/137_porygon.png",
+        "front_shiny": "./sprites/pokemon/137_porygon_shiny.png"
+      }
+    },
+    {
+      "id": 138,
+      "apiName": "omanyte",
+      "types": [
+        "rock",
+        "water"
+      ],
+      "baseStats": {
+        "hp": 35,
+        "attack": 40,
+        "defense": 100,
+        "specialattack": 90,
+        "specialdefense": 55,
+        "speed": 35
+      },
+      "height": 4,
+      "weight": 75,
+      "description": "Although long extinct, in rare cases, it can be genetically resurrected from fossils.",
+      "baseExperienceYield": 71,
+      "sprites": {
+        "front_default": "./sprites/pokemon/138_omanyte.png",
+        "front_shiny": "./sprites/pokemon/138_omanyte_shiny.png"
+      }
+    },
+    {
+      "id": 139,
+      "apiName": "omastar",
+      "types": [
+        "rock",
+        "water"
+      ],
+      "baseStats": {
+        "hp": 70,
+        "attack": 60,
+        "defense": 125,
+        "specialattack": 115,
+        "specialdefense": 70,
+        "speed": 55
+      },
+      "height": 10,
+      "weight": 350,
+      "description": "A prehistoric POKéMON that died out when its heavy shell made it impossible to catch prey.",
+      "baseExperienceYield": 173,
+      "sprites": {
+        "front_default": "./sprites/pokemon/139_omastar.png",
+        "front_shiny": "./sprites/pokemon/139_omastar_shiny.png"
+      }
+    },
+    {
+      "id": 140,
+      "apiName": "kabuto",
+      "types": [
+        "rock",
+        "water"
+      ],
+      "baseStats": {
+        "hp": 30,
+        "attack": 80,
+        "defense": 90,
+        "specialattack": 55,
+        "specialdefense": 45,
+        "speed": 55
+      },
+      "height": 5,
+      "weight": 115,
+      "description": "A POKéMON that was resurrected from a fossil found in what was once the ocean floor eons ago.",
+      "baseExperienceYield": 71,
+      "sprites": {
+        "front_default": "./sprites/pokemon/140_kabuto.png",
+        "front_shiny": "./sprites/pokemon/140_kabuto_shiny.png"
+      }
+    },
+    {
+      "id": 141,
+      "apiName": "kabutops",
+      "types": [
+        "rock",
+        "water"
+      ],
+      "baseStats": {
+        "hp": 60,
+        "attack": 115,
+        "defense": 105,
+        "specialattack": 65,
+        "specialdefense": 70,
+        "speed": 80
+      },
+      "height": 13,
+      "weight": 405,
+      "description": "Its sleek shape is perfect for swim­ ming. It slashes prey with its claws and drains the body fluids.",
+      "baseExperienceYield": 173,
+      "sprites": {
+        "front_default": "./sprites/pokemon/141_kabutops.png",
+        "front_shiny": "./sprites/pokemon/141_kabutops_shiny.png"
+      }
+    },
+    {
+      "id": 142,
+      "apiName": "aerodactyl",
+      "types": [
+        "rock",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 65,
+        "specialattack": 60,
+        "specialdefense": 75,
+        "speed": 130
+      },
+      "height": 18,
+      "weight": 590,
+      "description": "A Pokémon that roamed the skies in the dinosaur era. Its teeth are like saw blades.",
+      "baseExperienceYield": 180,
+      "sprites": {
+        "front_default": "./sprites/pokemon/142_aerodactyl.png",
+        "front_shiny": "./sprites/pokemon/142_aerodactyl_shiny.png"
+      }
+    },
+    {
+      "id": 143,
+      "apiName": "snorlax",
+      "types": [
+        "normal"
+      ],
+      "baseStats": {
+        "hp": 160,
+        "attack": 110,
+        "defense": 65,
+        "specialattack": 65,
+        "specialdefense": 110,
+        "speed": 30
+      },
+      "height": 21,
+      "weight": 4600,
+      "description": "Very lazy. Just eats and sleeps. As its rotund bulk builds, it becomes steadily more slothful.",
+      "baseExperienceYield": 189,
+      "sprites": {
+        "front_default": "./sprites/pokemon/143_snorlax.png",
+        "front_shiny": "./sprites/pokemon/143_snorlax_shiny.png"
+      }
+    },
+    {
+      "id": 144,
+      "apiName": "articuno",
+      "types": [
+        "ice",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 100,
+        "specialattack": 95,
+        "specialdefense": 125,
+        "speed": 85
+      },
+      "height": 17,
+      "weight": 554,
+      "description": "A legendary bird POKéMON that is said to appear to doomed people who are lost in icy mountains.",
+      "baseExperienceYield": 290,
+      "sprites": {
+        "front_default": "./sprites/pokemon/144_articuno.png",
+        "front_shiny": "./sprites/pokemon/144_articuno_shiny.png"
+      }
+    },
+    {
+      "id": 145,
+      "apiName": "zapdos",
+      "types": [
+        "electric",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "specialattack": 125,
+        "specialdefense": 90,
+        "speed": 100
+      },
+      "height": 16,
+      "weight": 526,
+      "description": "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
+      "baseExperienceYield": 290,
+      "sprites": {
+        "front_default": "./sprites/pokemon/145_zapdos.png",
+        "front_shiny": "./sprites/pokemon/145_zapdos_shiny.png"
+      }
+    },
+    {
+      "id": 146,
+      "apiName": "moltres",
+      "types": [
+        "fire",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "specialattack": 125,
+        "specialdefense": 85,
+        "speed": 90
+      },
+      "height": 20,
+      "weight": 600,
+      "description": "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+      "baseExperienceYield": 290,
+      "sprites": {
+        "front_default": "./sprites/pokemon/146_moltres.png",
+        "front_shiny": "./sprites/pokemon/146_moltres_shiny.png"
+      }
+    },
+    {
+      "id": 147,
+      "apiName": "dratini",
+      "types": [
+        "dragon"
+      ],
+      "baseStats": {
+        "hp": 41,
+        "attack": 64,
+        "defense": 45,
+        "specialattack": 50,
+        "specialdefense": 50,
+        "speed": 50
+      },
+      "height": 18,
+      "weight": 33,
+      "description": "Long considered a mythical POKéMON until recently when a small colony was found living underwater.",
+      "baseExperienceYield": 60,
+      "sprites": {
+        "front_default": "./sprites/pokemon/147_dratini.png",
+        "front_shiny": "./sprites/pokemon/147_dratini_shiny.png"
+      }
+    },
+    {
+      "id": 148,
+      "apiName": "dragonair",
+      "types": [
+        "dragon"
+      ],
+      "baseStats": {
+        "hp": 61,
+        "attack": 84,
+        "defense": 65,
+        "specialattack": 70,
+        "specialdefense": 70,
+        "speed": 70
+      },
+      "height": 40,
+      "weight": 165,
+      "description": "A mystical POKéMON that exudes a gentle aura. Has the ability to change climate conditions.",
+      "baseExperienceYield": 147,
+      "sprites": {
+        "front_default": "./sprites/pokemon/148_dragonair.png",
+        "front_shiny": "./sprites/pokemon/148_dragonair_shiny.png"
+      }
+    },
+    {
+      "id": 149,
+      "apiName": "dragonite",
+      "types": [
+        "dragon",
+        "flying"
+      ],
+      "baseStats": {
+        "hp": 91,
+        "attack": 134,
+        "defense": 95,
+        "specialattack": 100,
+        "specialdefense": 100,
+        "speed": 80
+      },
+      "height": 22,
+      "weight": 2100,
+      "description": "An extremely rarely seen marine POKéMON. Its intelligence is said to match that of humans.",
+      "baseExperienceYield": 300,
+      "sprites": {
+        "front_default": "./sprites/pokemon/149_dragonite.png",
+        "front_shiny": "./sprites/pokemon/149_dragonite_shiny.png"
+      }
+    },
+    {
+      "id": 150,
+      "apiName": "mewtwo",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 106,
+        "attack": 110,
+        "defense": 90,
+        "specialattack": 154,
+        "specialdefense": 90,
+        "speed": 130
+      },
+      "height": 20,
+      "weight": 1220,
+      "description": "It was created by a scientist after years of horrific gene splicing and DNA engineering experiments.",
+      "baseExperienceYield": 340,
+      "sprites": {
+        "front_default": "./sprites/pokemon/150_mewtwo.png",
+        "front_shiny": "./sprites/pokemon/150_mewtwo_shiny.png"
+      }
+    },
+    {
+      "id": 151,
+      "apiName": "mew",
+      "types": [
+        "psychic"
+      ],
+      "baseStats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "specialattack": 100,
+        "specialdefense": 100,
+        "speed": 100
+      },
+      "height": 4,
+      "weight": 40,
+      "description": "So rare that it is still said to be a mirage by many experts. Only a few people have seen it worldwide.",
+      "baseExperienceYield": 300,
+      "sprites": {
+        "front_default": "./sprites/pokemon/151_mew.png",
+        "front_shiny": "./sprites/pokemon/151_mew_shiny.png"
+      }
+    }
+  ],
+  "typeDamageRelations": {
+    "normal": {
+      "double_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        }
+      ],
+      "double_damage_to": [],
+      "half_damage_from": [],
+      "half_damage_to": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        }
+      ],
+      "no_damage_to": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        }
+      ]
+    },
+    "poison": {
+      "double_damage_from": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        }
+      ]
+    },
+    "fighting": {
+      "double_damage_from": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "normal",
+          "url": "https://pokeapi.co/api/v2/type/1/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        }
+      ]
+    },
+    "ground": {
+      "double_damage_from": [
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "no_damage_to": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        }
+      ]
+    },
+    "bug": {
+      "double_damage_from": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    "rock": {
+      "double_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "normal",
+          "url": "https://pokeapi.co/api/v2/type/1/"
+        },
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    "electric": {
+      "double_damage_from": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        }
+      ]
+    },
+    "ghost": {
+      "double_damage_from": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "normal",
+          "url": "https://pokeapi.co/api/v2/type/1/"
+        },
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        }
+      ],
+      "no_damage_to": [
+        {
+          "name": "normal",
+          "url": "https://pokeapi.co/api/v2/type/1/"
+        }
+      ]
+    },
+    "steel": {
+      "double_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "normal",
+          "url": "https://pokeapi.co/api/v2/type/1/"
+        },
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        }
+      ],
+      "no_damage_to": []
+    },
+    "fire": {
+      "double_damage_from": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    "grass": {
+      "double_damage_from": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    "flying": {
+      "double_damage_from": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        }
+      ],
+      "no_damage_to": []
+    },
+    "ice": {
+      "double_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "flying",
+          "url": "https://pokeapi.co/api/v2/type/3/"
+        },
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    "psychic": {
+      "double_damage_from": [
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ]
+    },
+    "fairy": {
+      "double_damage_from": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "poison",
+          "url": "https://pokeapi.co/api/v2/type/4/"
+        },
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "no_damage_to": []
+    },
+    "water": {
+      "double_damage_from": [
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "ground",
+          "url": "https://pokeapi.co/api/v2/type/5/"
+        },
+        {
+          "name": "rock",
+          "url": "https://pokeapi.co/api/v2/type/6/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        },
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": []
+    },
+    "dark": {
+      "double_damage_from": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "bug",
+          "url": "https://pokeapi.co/api/v2/type/7/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        },
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "ghost",
+          "url": "https://pokeapi.co/api/v2/type/8/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "fighting",
+          "url": "https://pokeapi.co/api/v2/type/2/"
+        },
+        {
+          "name": "dark",
+          "url": "https://pokeapi.co/api/v2/type/17/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "no_damage_from": [
+        {
+          "name": "psychic",
+          "url": "https://pokeapi.co/api/v2/type/14/"
+        }
+      ],
+      "no_damage_to": []
+    },
+    "dragon": {
+      "double_damage_from": [
+        {
+          "name": "ice",
+          "url": "https://pokeapi.co/api/v2/type/15/"
+        },
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        },
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ],
+      "double_damage_to": [
+        {
+          "name": "dragon",
+          "url": "https://pokeapi.co/api/v2/type/16/"
+        }
+      ],
+      "half_damage_from": [
+        {
+          "name": "fire",
+          "url": "https://pokeapi.co/api/v2/type/10/"
+        },
+        {
+          "name": "water",
+          "url": "https://pokeapi.co/api/v2/type/11/"
+        },
+        {
+          "name": "grass",
+          "url": "https://pokeapi.co/api/v2/type/12/"
+        },
+        {
+          "name": "electric",
+          "url": "https://pokeapi.co/api/v2/type/13/"
+        }
+      ],
+      "half_damage_to": [
+        {
+          "name": "steel",
+          "url": "https://pokeapi.co/api/v2/type/9/"
+        }
+      ],
+      "no_damage_from": [],
+      "no_damage_to": [
+        {
+          "name": "fairy",
+          "url": "https://pokeapi.co/api/v2/type/18/"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Dependencies
+node_modules
+
+# Common system files (good practice to add)
+.DS_Store
