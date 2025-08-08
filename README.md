@@ -14,7 +14,7 @@ You need to have [Node.js](https://nodejs.org/) installed on your computer. This
 
 1.  **Clone the repository to your machine:**
     ```bash
-    git clone <your-repo-url-goes-here>
+    git clone <[your-repo-url-goes-here](https://github.com/vicsanity623/MultiplayerPokemon.git)>
     ```
 
 2.  **Navigate into the project directory:**
